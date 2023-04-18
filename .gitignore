@@ -1,0 +1,12 @@
+# Project exclude paths
+/api-datasource/target/
+/api-gateway/target/
+/client-web/target/
+/detect-yolo/target/
+/service-ai/target/
+/service-area/target/
+/service-datasource/target/
+/service-obstacle/target/
+/service-subscription/target/
+/service-user/target/
+/utils-common/target/

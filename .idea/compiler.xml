@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service-ai" />
+        <module name="service-user" />
+        <module name="service-obstacle" />
+        <module name="detect-yolo" />
+        <module name="client-web" />
+        <module name="api-datasource" />
+        <module name="service-area" />
+        <module name="api-gateway" />
+        <module name="service-datasource" />
+        <module name="service-subscription" />
+        <module name="utils-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-datasource" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+      <module name="client-web" options="-parameters" />
+      <module name="detect-yolo" options="-parameters" />
+      <module name="service-ai" options="-parameters" />
+      <module name="service-area" options="-parameters" />
+      <module name="service-datasource" options="-parameters" />
+      <module name="service-obstacle" options="-parameters" />
+      <module name="service-subscription" options="-parameters" />
+      <module name="service-user" options="-parameters" />
+      <module name="user" options="-parameters" />
+      <module name="utils-common" options="-parameters" />
+    </option>
+  </component>
+</project>

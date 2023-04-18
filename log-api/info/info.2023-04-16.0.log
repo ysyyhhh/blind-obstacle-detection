@@ -1,0 +1,795 @@
+08:55:03.953 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+08:55:05.817 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+08:55:05.888 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+08:55:06.669 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=f55f6ad8-04c5-3cd3-8a4d-5a7f0d640994
+08:55:06.759 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:55:07.073 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c6ad46a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:55:07.142 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e2c749a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:55:08.060 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+08:55:08.475 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+08:55:08.667 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+08:55:09.257 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+08:55:09.270 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+08:55:10.057 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+08:55:10.795 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08:55:11.834 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:55:15.820 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+08:55:15.822 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+08:55:15.823 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+08:55:15.824 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+08:55:15.825 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+08:55:15.826 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+08:55:15.826 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+08:55:15.827 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+08:55:15.828 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+08:55:15.830 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+08:55:15.831 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+08:55:15.833 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+08:55:15.833 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+08:55:15.914 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+08:55:15.927 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+08:55:18.806 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+08:55:24.101 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+08:55:24.625 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+08:55:24.631 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 25.0526517 seconds (JVM running for 28.998)
+09:40:39.571 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+09:40:39.572 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+09:40:39.573 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+09:40:39.573 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+09:40:39.574 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+09:40:39.574 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /detect-yolo/**
+09:40:39.574 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+09:40:39.574 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-ai/**
+09:40:39.575 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+09:40:39.575 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+09:40:39.575 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+09:40:39.575 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+09:40:39.575 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+09:40:39.575 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+09:40:39.576 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+09:40:39.576 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+09:40:40.423 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:40:40.476 [reactor-http-nio-2] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+09:40:40.485 [reactor-http-nio-2] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+09:40:40.510 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:40:40.512 [reactor-http-nio-2] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[192.168.220.1:8081],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8081;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@47f4fc8
+09:40:41.500 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:40:41.817 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/login
+09:40:41.817 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+09:40:41.818 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+09:40:41.818 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+09:40:41.818 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+09:40:41.818 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /detect-yolo/**
+09:40:41.819 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+09:40:41.819 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-ai/**
+09:40:41.820 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+09:40:41.820 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+09:40:41.820 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+09:40:41.821 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+09:40:41.821 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+09:40:41.821 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+09:40:41.822 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+09:40:41.822 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+09:40:42.578 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/user/getUser
+09:40:42.579 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+09:40:42.579 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+09:40:42.579 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+09:40:42.579 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+09:40:42.579 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /detect-yolo/**
+09:40:42.580 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+09:40:42.580 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-ai/**
+09:40:42.581 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+09:40:42.581 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+09:40:42.582 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+09:40:42.582 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+09:40:42.582 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+09:40:42.582 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+09:40:42.582 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+09:40:42.583 [reactor-http-nio-8] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMyOTI0MiwiaWF0IjoxNjgxNjA5MjQyfQ.QmPn8pPBxNMhEc1bPsHPn4x5LYVWGbbJi9rMCbaiD1o
+09:40:42.583 [reactor-http-nio-8] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMyOTI0MiwiaWF0IjoxNjgxNjA5MjQyfQ.QmPn8pPBxNMhEc1bPsHPn4x5LYVWGbbJi9rMCbaiD1o
+09:40:42.907 [reactor-http-nio-8] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@5c0c760b
+09:40:42.922 [reactor-http-nio-8] - 84 - AuthService log - /service-user/user/getUser
+09:40:42.927 [reactor-http-nio-8] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+09:40:42.928 [reactor-http-nio-8] - 86 - AuthService log - authc
+09:40:42.928 [reactor-http-nio-8] - 88 - AuthService log - false
+09:40:42.929 [reactor-http-nio-8] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@5c0c760b
+09:40:42.935 [reactor-http-nio-8] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+09:45:55.007 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-area/user/getAreaTree
+09:45:55.008 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-obstacle/user/getObstacleListByArea
+09:45:55.009 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+09:45:55.009 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+09:45:55.010 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+09:45:55.011 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+09:45:55.011 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+09:45:55.012 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+09:45:55.012 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+09:45:55.013 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /detect-yolo/**
+09:45:55.013 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+09:45:55.013 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+09:45:55.013 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /detect-yolo/**
+09:45:55.014 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-ai/**
+09:45:55.014 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+09:45:55.014 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+09:45:55.014 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-ai/**
+09:45:55.015 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+09:45:55.015 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+09:45:55.015 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+09:45:55.015 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+09:45:55.016 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+09:45:55.016 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+09:45:55.016 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+09:45:55.016 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+09:45:55.016 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+09:45:55.017 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+09:45:55.017 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+09:45:55.017 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+09:45:55.017 [reactor-http-nio-1] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMyOTI0MiwiaWF0IjoxNjgxNjA5MjQyfQ.QmPn8pPBxNMhEc1bPsHPn4x5LYVWGbbJi9rMCbaiD1o
+09:45:55.017 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+09:45:55.018 [reactor-http-nio-1] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMyOTI0MiwiaWF0IjoxNjgxNjA5MjQyfQ.QmPn8pPBxNMhEc1bPsHPn4x5LYVWGbbJi9rMCbaiD1o
+09:45:55.018 [reactor-http-nio-2] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMyOTI0MiwiaWF0IjoxNjgxNjA5MjQyfQ.QmPn8pPBxNMhEc1bPsHPn4x5LYVWGbbJi9rMCbaiD1o
+09:45:55.018 [reactor-http-nio-2] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMyOTI0MiwiaWF0IjoxNjgxNjA5MjQyfQ.QmPn8pPBxNMhEc1bPsHPn4x5LYVWGbbJi9rMCbaiD1o
+09:45:55.034 [reactor-http-nio-2] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@5f4f592
+09:45:55.035 [reactor-http-nio-1] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@459eb37f
+09:45:55.036 [reactor-http-nio-2] - 84 - AuthService log - /service-obstacle/user/getObstacleListByArea
+09:45:55.037 [reactor-http-nio-1] - 84 - AuthService log - /service-area/user/getAreaTree
+09:45:55.037 [reactor-http-nio-2] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+09:45:55.037 [reactor-http-nio-1] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+09:45:55.037 [reactor-http-nio-2] - 86 - AuthService log - authc
+09:45:55.038 [reactor-http-nio-1] - 86 - AuthService log - perms[admin]
+09:45:55.038 [reactor-http-nio-2] - 88 - AuthService log - false
+09:45:55.038 [reactor-http-nio-1] - 88 - AuthService log - false
+09:45:55.039 [reactor-http-nio-2] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@5f4f592
+09:45:55.039 [reactor-http-nio-1] - 93 - AuthService log - 进一步判断用户权限
+09:45:55.039 [reactor-http-nio-2] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+09:45:55.039 [reactor-http-nio-1] - 98 - AuthService log - account:cc.yysy.utilscommon.entity.User@459eb37f[admin, user]admin
+09:45:55.040 [reactor-http-nio-1] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@459eb37f
+09:45:55.041 [reactor-http-nio-1] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+09:45:55.090 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-obstacle.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:45:55.094 [reactor-http-nio-2] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-obstacle instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-obstacle,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+09:45:55.095 [reactor-http-nio-2] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+09:45:55.096 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-obstacle.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:45:55.098 [reactor-http-nio-2] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-obstacle initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-obstacle,current list of Servers=[192.168.220.1:8084],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8084;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@bced8a
+09:45:55.147 [reactor-http-nio-1] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-area.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:45:55.153 [reactor-http-nio-1] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-area instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-area,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+09:45:55.154 [reactor-http-nio-1] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+09:45:55.155 [reactor-http-nio-1] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-area.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:45:55.158 [reactor-http-nio-1] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-area initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-area,current list of Servers=[192.168.220.1:8082],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8082;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@645c183
+09:45:55.187 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-area/user/getOptions
+09:45:55.187 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-area/user/getMySubscribedAreaList
+09:45:55.187 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+09:45:55.188 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+09:45:55.188 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+09:45:55.188 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+09:45:55.188 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+09:45:55.188 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+09:45:55.188 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+09:45:55.189 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+09:45:55.189 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /detect-yolo/**
+09:45:55.189 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /detect-yolo/**
+09:45:55.189 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+09:45:55.190 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+09:45:55.191 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-ai/**
+09:45:55.192 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-ai/**
+09:45:55.192 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+09:45:55.193 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+09:45:55.194 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+09:45:55.195 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+09:45:55.195 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+09:45:55.196 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+09:45:55.196 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+09:45:55.196 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+09:45:55.197 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+09:45:55.197 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+09:45:55.197 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+09:45:55.197 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+09:45:55.198 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+09:45:55.198 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+09:45:55.198 [reactor-http-nio-4] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMyOTI0MiwiaWF0IjoxNjgxNjA5MjQyfQ.QmPn8pPBxNMhEc1bPsHPn4x5LYVWGbbJi9rMCbaiD1o
+09:45:55.198 [reactor-http-nio-3] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMyOTI0MiwiaWF0IjoxNjgxNjA5MjQyfQ.QmPn8pPBxNMhEc1bPsHPn4x5LYVWGbbJi9rMCbaiD1o
+09:45:55.198 [reactor-http-nio-4] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMyOTI0MiwiaWF0IjoxNjgxNjA5MjQyfQ.QmPn8pPBxNMhEc1bPsHPn4x5LYVWGbbJi9rMCbaiD1o
+09:45:55.199 [reactor-http-nio-3] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMyOTI0MiwiaWF0IjoxNjgxNjA5MjQyfQ.QmPn8pPBxNMhEc1bPsHPn4x5LYVWGbbJi9rMCbaiD1o
+09:45:55.209 [reactor-http-nio-4] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@22c6f56e
+09:45:55.210 [reactor-http-nio-3] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@7e72d6ac
+09:45:55.211 [reactor-http-nio-4] - 84 - AuthService log - /service-area/user/getOptions
+09:45:55.212 [reactor-http-nio-4] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+09:45:55.212 [reactor-http-nio-3] - 84 - AuthService log - /service-area/user/getMySubscribedAreaList
+09:45:55.213 [reactor-http-nio-4] - 86 - AuthService log - perms[admin]
+09:45:55.213 [reactor-http-nio-3] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+09:45:55.213 [reactor-http-nio-4] - 88 - AuthService log - false
+09:45:55.214 [reactor-http-nio-3] - 86 - AuthService log - perms[admin]
+09:45:55.214 [reactor-http-nio-4] - 93 - AuthService log - 进一步判断用户权限
+09:45:55.215 [reactor-http-nio-3] - 88 - AuthService log - false
+09:45:55.215 [reactor-http-nio-4] - 98 - AuthService log - account:cc.yysy.utilscommon.entity.User@22c6f56e[admin, user]admin
+09:45:55.216 [reactor-http-nio-3] - 93 - AuthService log - 进一步判断用户权限
+09:45:55.216 [reactor-http-nio-4] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@22c6f56e
+09:45:55.216 [reactor-http-nio-3] - 98 - AuthService log - account:cc.yysy.utilscommon.entity.User@7e72d6ac[admin, user]admin
+09:45:55.217 [reactor-http-nio-4] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+09:45:55.217 [reactor-http-nio-3] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@7e72d6ac
+09:45:55.218 [reactor-http-nio-3] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+09:45:56.100 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-obstacle.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:45:56.161 [PollingServerListUpdater-1] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-area.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+10:49:49.167 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+10:49:49.170 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+10:49:49.170 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+10:49:49.171 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+10:49:49.171 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+10:49:49.171 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /detect-yolo/**
+10:49:49.171 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+10:49:49.171 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-ai/**
+10:49:49.172 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+10:49:49.172 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+10:49:49.172 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+10:49:49.172 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+10:49:49.172 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+10:49:49.172 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+10:49:49.173 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+10:49:49.173 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+10:49:49.595 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+10:49:49.596 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+10:49:49.596 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+10:49:49.597 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+10:49:49.597 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+10:49:49.597 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /detect-yolo/**
+10:49:49.597 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+10:49:49.598 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-ai/**
+10:49:49.598 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+10:49:49.599 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+10:49:49.599 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+10:49:49.599 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+10:49:49.599 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+10:49:49.599 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+10:49:49.599 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+10:49:49.600 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+10:49:50.500 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/user/getUser
+10:49:50.501 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+10:49:50.501 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+10:49:50.502 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+10:49:50.502 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+10:49:50.502 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /detect-yolo/**
+10:49:50.503 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+10:49:50.503 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-ai/**
+10:49:50.503 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+10:49:50.503 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+10:49:50.504 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+10:49:50.504 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+10:49:50.504 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+10:49:50.504 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+10:49:50.504 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+10:49:50.505 [reactor-http-nio-7] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMzMzM5MCwiaWF0IjoxNjgxNjEzMzkwfQ.zvCxlY6QjKCEnZAlNkzzQmiFo0UKz7_WPW38ZPOsZsU
+10:49:50.505 [reactor-http-nio-7] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMzMzM5MCwiaWF0IjoxNjgxNjEzMzkwfQ.zvCxlY6QjKCEnZAlNkzzQmiFo0UKz7_WPW38ZPOsZsU
+10:49:50.530 [reactor-http-nio-7] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@27c23d51
+10:49:50.533 [reactor-http-nio-7] - 84 - AuthService log - /service-user/user/getUser
+10:49:50.534 [reactor-http-nio-7] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+10:49:50.534 [reactor-http-nio-7] - 86 - AuthService log - authc
+10:49:50.534 [reactor-http-nio-7] - 88 - AuthService log - false
+10:49:50.534 [reactor-http-nio-7] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@27c23d51
+10:49:50.535 [reactor-http-nio-7] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+10:49:55.403 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/user/updateUser
+10:49:55.404 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+10:49:55.404 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+10:49:55.404 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+10:49:55.404 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+10:49:55.405 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /detect-yolo/**
+10:49:55.405 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+10:49:55.405 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-ai/**
+10:49:55.405 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+10:49:55.405 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+10:49:55.405 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+10:49:55.406 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+10:49:55.406 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+10:49:55.406 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+10:49:55.406 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+10:49:55.406 [reactor-http-nio-8] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMzMzM5MCwiaWF0IjoxNjgxNjEzMzkwfQ.zvCxlY6QjKCEnZAlNkzzQmiFo0UKz7_WPW38ZPOsZsU
+10:49:55.406 [reactor-http-nio-8] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjMzMzM5MCwiaWF0IjoxNjgxNjEzMzkwfQ.zvCxlY6QjKCEnZAlNkzzQmiFo0UKz7_WPW38ZPOsZsU
+10:49:55.418 [reactor-http-nio-8] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@45b77e27
+10:49:55.420 [reactor-http-nio-8] - 84 - AuthService log - /service-user/user/updateUser
+10:49:55.421 [reactor-http-nio-8] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+10:49:55.421 [reactor-http-nio-8] - 86 - AuthService log - authc
+10:49:55.421 [reactor-http-nio-8] - 88 - AuthService log - false
+10:49:55.422 [reactor-http-nio-8] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@45b77e27
+10:49:55.422 [reactor-http-nio-8] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+10:52:05.554 [Thread-57] - 53 - c.n.l.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+10:52:05.582 [Thread-43] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+10:52:05.587 [Thread-43] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+10:52:05.606 [Thread-43] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:52:05.654 [Thread-43] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:52:05.661 [Thread-43] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:00:00.328 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+11:00:01.578 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=da4e04fc-03c4-304b-80ea-dce417a24bc8
+11:00:01.603 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:00:01.688 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b53fd24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:00:01.707 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$276e0021] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:00:03.345 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+11:00:03.348 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+11:00:03.371 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:00:03.378 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:00:03.938 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+11:00:05.608 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+11:00:05.728 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+11:00:05.728 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 8.1749871 seconds (JVM running for 12.144)
+11:06:06.008 [Thread-22] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+11:06:06.014 [Thread-22] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+11:06:26.762 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+11:06:28.098 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=da4e04fc-03c4-304b-80ea-dce417a24bc8
+11:06:28.107 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:06:28.198 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b3093543] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:06:28.223 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cf233840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+11:06:30.147 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+11:06:30.178 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:06:30.185 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+11:06:30.868 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+11:06:33.417 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+11:06:33.622 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+11:06:33.622 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 11.2741038 seconds (JVM running for 14.08)
+11:06:58.698 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/v2/api-docs
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /detect-yolo/**
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-ai/**
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+11:06:58.698 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+11:06:58.698 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+11:06:59.471 [reactor-http-nio-6] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:06:59.515 [reactor-http-nio-6] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+11:06:59.528 [reactor-http-nio-6] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+11:06:59.534 [reactor-http-nio-6] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@786b1076
+11:07:05.977 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/v2/api-docs
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /detect-yolo/**
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-ai/**
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+11:07:05.977 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+11:07:05.987 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+11:07:05.987 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+11:08:30.623 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:09:56.722 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-datasource/v2/api-docs
+11:09:56.727 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+11:09:56.727 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+11:09:56.727 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+11:09:56.727 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+11:09:56.727 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /detect-yolo/**
+11:09:56.732 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+11:09:56.732 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-ai/**
+11:09:56.732 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+11:09:56.732 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+11:09:56.732 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+11:09:56.732 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+11:09:56.732 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+11:09:56.732 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+11:09:56.732 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+11:09:56.732 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+11:09:56.882 [reactor-http-nio-3] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-datasource.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:09:56.892 [reactor-http-nio-3] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-datasource instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-datasource,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+11:09:56.892 [reactor-http-nio-3] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+11:09:56.892 [reactor-http-nio-3] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-datasource.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:09:56.897 [reactor-http-nio-3] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-datasource initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-datasource,current list of Servers=[192.168.220.1:8086],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8086;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@6f53e6
+11:09:57.897 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-datasource.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:10:06.091 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /detect-yolo/**
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-ai/**
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+11:10:06.091 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+11:10:06.091 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+11:10:06.129 [reactor-http-nio-3] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: detect-yolo.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:10:06.129 [reactor-http-nio-3] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: detect-yolo instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=detect-yolo,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+11:10:06.129 [reactor-http-nio-3] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+11:10:06.129 [reactor-http-nio-3] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: detect-yolo.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:10:06.129 [reactor-http-nio-3] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client detect-yolo initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=detect-yolo,current list of Servers=[192.168.220.1:8087],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8087;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@4018b1bb
+11:10:07.146 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: detect-yolo.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+11:33:44.647 [Thread-47] - 53 - c.n.l.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+11:33:44.647 [Thread-28] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+11:33:44.655 [Thread-28] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+14:07:01.815 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+14:07:02.540 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=da4e04fc-03c4-304b-80ea-dce417a24bc8
+14:07:02.554 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:07:02.620 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e60581a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:07:02.635 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$21f849e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:07:04.175 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+14:07:04.175 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+14:07:04.176 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+14:07:04.176 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+14:07:04.176 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+14:07:04.177 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+14:07:04.177 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+14:07:04.178 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+14:07:04.178 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+14:07:04.178 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+14:07:04.178 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+14:07:04.179 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+14:07:04.179 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+14:07:04.202 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:07:04.207 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:07:04.865 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+14:07:06.596 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+14:07:06.711 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+14:07:06.713 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 6.6584986 seconds (JVM running for 8.081)
+14:10:11.797 [Thread-23] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+14:10:11.804 [Thread-23] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+14:10:17.772 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+14:10:18.518 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=da4e04fc-03c4-304b-80ea-dce417a24bc8
+14:10:18.533 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:10:18.595 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$489c4247] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:10:18.615 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$64b64544] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:10:20.234 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+14:10:20.235 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+14:10:20.236 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+14:10:20.236 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+14:10:20.236 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+14:10:20.237 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+14:10:20.237 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+14:10:20.237 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+14:10:20.237 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+14:10:20.238 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+14:10:20.238 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+14:10:20.239 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+14:10:20.239 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+14:10:20.264 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:10:20.269 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:10:20.868 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+14:10:22.878 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+14:10:22.999 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+14:10:23.001 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 7.0831516 seconds (JVM running for 8.68)
+14:23:59.036 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+14:23:59.037 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:23:59.037 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+14:23:59.038 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:23:59.038 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:23:59.038 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:23:59.039 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:23:59.039 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-ai/**
+14:23:59.039 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:23:59.039 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:23:59.040 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:23:59.040 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:23:59.040 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:23:59.040 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:23:59.041 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:23:59.041 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+14:23:59.906 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:23:59.953 [reactor-http-nio-2] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+14:23:59.963 [reactor-http-nio-2] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+14:23:59.989 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:23:59.992 [reactor-http-nio-2] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[192.168.220.1:8081],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8081;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@5a0bcdad
+14:24:00.917 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/login
+14:24:00.918 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:24:00.918 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+14:24:00.918 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:24:00.919 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:24:00.919 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:24:00.919 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:24:00.919 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-ai/**
+14:24:00.920 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:24:00.920 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:24:00.920 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:24:00.920 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:24:00.921 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:24:00.921 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:24:00.921 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:24:00.921 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+14:24:00.974 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:24:01.801 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/user/getUser
+14:24:01.802 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:24:01.802 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+14:24:01.803 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:24:01.803 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:24:01.803 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:24:01.803 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:24:01.803 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-ai/**
+14:24:01.804 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:24:01.804 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:24:01.804 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:24:01.804 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:24:01.804 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:24:01.805 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:24:01.805 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:24:01.805 [reactor-http-nio-8] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:24:01.806 [reactor-http-nio-8] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:24:02.038 [reactor-http-nio-8] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@37cb3ac9
+14:24:02.050 [reactor-http-nio-8] - 84 - AuthService log - /service-user/user/getUser
+14:24:02.054 [reactor-http-nio-8] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+14:24:02.055 [reactor-http-nio-8] - 86 - AuthService log - authc
+14:24:02.055 [reactor-http-nio-8] - 88 - AuthService log - false
+14:24:02.055 [reactor-http-nio-8] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@37cb3ac9
+14:24:02.058 [reactor-http-nio-8] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜1231","userType":"admin","username":"admin"}
+14:34:45.663 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-obstacle/user/getObstacleList
+14:34:45.663 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-obstacle/user/getOptions
+14:34:45.664 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:34:45.664 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:34:45.664 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+14:34:45.664 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+14:34:45.664 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:34:45.665 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:34:45.665 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:34:45.665 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:34:45.665 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:34:45.666 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:34:45.666 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:34:45.666 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:34:45.666 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-ai/**
+14:34:45.666 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-ai/**
+14:34:45.667 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:34:45.667 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:34:45.667 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:34:45.667 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:34:45.668 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:34:45.668 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:34:45.668 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:34:45.668 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:34:45.669 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:34:45.669 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:34:45.669 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:34:45.670 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:34:45.670 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:34:45.670 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:34:45.670 [reactor-http-nio-1] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:45.670 [reactor-http-nio-2] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:45.670 [reactor-http-nio-1] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:45.671 [reactor-http-nio-2] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:45.687 [reactor-http-nio-2] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@29f32fad
+14:34:45.687 [reactor-http-nio-1] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@43cb25cc
+14:34:45.688 [reactor-http-nio-2] - 84 - AuthService log - /service-obstacle/user/getOptions
+14:34:45.688 [reactor-http-nio-1] - 84 - AuthService log - /service-obstacle/user/getObstacleList
+14:34:45.689 [reactor-http-nio-2] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+14:34:45.689 [reactor-http-nio-1] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+14:34:45.689 [reactor-http-nio-2] - 86 - AuthService log - authc
+14:34:45.690 [reactor-http-nio-1] - 86 - AuthService log - authc
+14:34:45.690 [reactor-http-nio-2] - 88 - AuthService log - false
+14:34:45.690 [reactor-http-nio-1] - 88 - AuthService log - false
+14:34:45.690 [reactor-http-nio-2] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@29f32fad
+14:34:45.690 [reactor-http-nio-1] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@43cb25cc
+14:34:45.691 [reactor-http-nio-2] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜1231","userType":"admin","username":"admin"}
+14:34:45.691 [reactor-http-nio-1] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜1231","userType":"admin","username":"admin"}
+14:34:45.739 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-obstacle.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:34:45.742 [reactor-http-nio-2] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-obstacle instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-obstacle,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+14:34:45.744 [reactor-http-nio-2] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+14:34:45.746 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-obstacle.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:34:45.748 [reactor-http-nio-2] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-obstacle initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-obstacle,current list of Servers=[192.168.220.1:8084],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8084;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@60d4ef54
+14:34:45.991 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/admin/getUserListByQuery
+14:34:45.992 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:34:45.992 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+14:34:45.992 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:34:45.992 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:34:45.993 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:34:45.993 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:34:45.993 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-ai/**
+14:34:45.994 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:34:45.994 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:34:45.995 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:34:45.995 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:34:45.995 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:34:45.996 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:34:45.996 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:34:45.996 [reactor-http-nio-3] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:45.996 [reactor-http-nio-3] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:46.014 [reactor-http-nio-3] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@6e87f812
+14:34:46.015 [reactor-http-nio-3] - 84 - AuthService log - /service-user/admin/getUserListByQuery
+14:34:46.021 [reactor-http-nio-3] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+14:34:46.023 [reactor-http-nio-3] - 86 - AuthService log - perms[admin]
+14:34:46.023 [reactor-http-nio-3] - 88 - AuthService log - false
+14:34:46.024 [reactor-http-nio-3] - 93 - AuthService log - 进一步判断用户权限
+14:34:46.024 [reactor-http-nio-3] - 98 - AuthService log - account:cc.yysy.utilscommon.entity.User@6e87f812[admin, user]admin
+14:34:46.025 [reactor-http-nio-3] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@6e87f812
+14:34:46.025 [reactor-http-nio-3] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜1231","userType":"admin","username":"admin"}
+14:34:46.755 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-obstacle.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:34:47.447 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-datasource/admin/getDataSourceList
+14:34:47.447 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:34:47.447 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+14:34:47.448 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:34:47.448 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:34:47.448 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:34:47.448 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:34:47.448 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-ai/**
+14:34:47.448 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:34:47.448 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:34:47.449 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:34:47.449 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:34:47.449 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:34:47.450 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:34:47.450 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:34:47.450 [reactor-http-nio-4] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:47.450 [reactor-http-nio-4] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:47.458 [reactor-http-nio-4] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@3686b8d0
+14:34:47.459 [reactor-http-nio-4] - 84 - AuthService log - /service-datasource/admin/getDataSourceList
+14:34:47.460 [reactor-http-nio-4] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+14:34:47.460 [reactor-http-nio-4] - 86 - AuthService log - perms[admin]
+14:34:47.461 [reactor-http-nio-4] - 88 - AuthService log - false
+14:34:47.461 [reactor-http-nio-4] - 93 - AuthService log - 进一步判断用户权限
+14:34:47.461 [reactor-http-nio-4] - 98 - AuthService log - account:cc.yysy.utilscommon.entity.User@3686b8d0[admin, user]admin
+14:34:47.462 [reactor-http-nio-4] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@3686b8d0
+14:34:47.462 [reactor-http-nio-4] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜1231","userType":"admin","username":"admin"}
+14:34:47.500 [reactor-http-nio-4] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-datasource.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:34:47.502 [reactor-http-nio-4] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-datasource instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-datasource,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+14:34:47.505 [reactor-http-nio-4] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+14:34:47.506 [reactor-http-nio-4] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-datasource.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:34:47.507 [reactor-http-nio-4] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-datasource initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-datasource,current list of Servers=[192.168.220.1:8086],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8086;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@4b88bca1
+14:34:48.024 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-datasource/admin/image
+14:34:48.024 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:34:48.024 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+14:34:48.025 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:34:48.025 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:34:48.025 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:34:48.025 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:34:48.025 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-ai/**
+14:34:48.025 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:34:48.026 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:34:48.026 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:34:48.026 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:34:48.026 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:34:48.026 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:34:48.026 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:34:48.027 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+14:34:48.515 [PollingServerListUpdater-1] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-datasource.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+14:34:48.936 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-datasource/admin/rawImageList/
+14:34:48.937 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:34:48.937 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+14:34:48.938 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:34:48.938 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:34:48.938 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:34:48.938 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:34:48.938 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-ai/**
+14:34:48.939 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:34:48.939 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:34:48.939 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:34:48.940 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:34:48.940 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:34:48.940 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:34:48.940 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:34:48.940 [reactor-http-nio-6] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:48.940 [reactor-http-nio-6] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:48.951 [reactor-http-nio-6] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@367189fc
+14:34:48.953 [reactor-http-nio-6] - 84 - AuthService log - /service-datasource/admin/rawImageList/
+14:34:48.953 [reactor-http-nio-6] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+14:34:48.953 [reactor-http-nio-6] - 86 - AuthService log - perms[admin]
+14:34:48.954 [reactor-http-nio-6] - 88 - AuthService log - false
+14:34:48.954 [reactor-http-nio-6] - 93 - AuthService log - 进一步判断用户权限
+14:34:48.954 [reactor-http-nio-6] - 98 - AuthService log - account:cc.yysy.utilscommon.entity.User@367189fc[admin, user]admin
+14:34:48.954 [reactor-http-nio-6] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@367189fc
+14:34:48.954 [reactor-http-nio-6] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜1231","userType":"admin","username":"admin"}
+14:34:52.270 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-datasource/admin/rawImageList/
+14:34:52.271 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:34:52.272 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+14:34:52.272 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:34:52.272 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:34:52.272 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:34:52.273 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:34:52.273 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-ai/**
+14:34:52.273 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:34:52.273 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:34:52.274 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:34:52.274 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:34:52.274 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:34:52.274 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:34:52.274 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:34:52.275 [reactor-http-nio-7] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:52.275 [reactor-http-nio-7] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:34:52.286 [reactor-http-nio-7] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@57f10481
+14:34:52.287 [reactor-http-nio-7] - 84 - AuthService log - /service-datasource/admin/rawImageList/
+14:34:52.288 [reactor-http-nio-7] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+14:34:52.288 [reactor-http-nio-7] - 86 - AuthService log - perms[admin]
+14:34:52.288 [reactor-http-nio-7] - 88 - AuthService log - false
+14:34:52.288 [reactor-http-nio-7] - 93 - AuthService log - 进一步判断用户权限
+14:34:52.288 [reactor-http-nio-7] - 98 - AuthService log - account:cc.yysy.utilscommon.entity.User@57f10481[admin, user]admin
+14:34:52.288 [reactor-http-nio-7] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@57f10481
+14:34:52.288 [reactor-http-nio-7] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜1231","userType":"admin","username":"admin"}
+14:36:48.888 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-datasource/admin/rawImageList/
+14:36:48.888 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:36:48.889 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+14:36:48.889 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:36:48.889 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:36:48.889 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:36:48.890 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:36:48.890 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-ai/**
+14:36:48.891 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:36:48.891 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:36:48.892 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:36:48.892 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:36:48.893 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:36:48.893 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:36:48.893 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:36:48.894 [reactor-http-nio-8] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:36:48.894 [reactor-http-nio-8] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:36:48.903 [reactor-http-nio-8] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@56af9dea
+14:36:48.905 [reactor-http-nio-8] - 84 - AuthService log - /service-datasource/admin/rawImageList/
+14:36:48.905 [reactor-http-nio-8] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+14:36:48.905 [reactor-http-nio-8] - 86 - AuthService log - perms[admin]
+14:36:48.905 [reactor-http-nio-8] - 88 - AuthService log - false
+14:36:48.906 [reactor-http-nio-8] - 93 - AuthService log - 进一步判断用户权限
+14:36:48.906 [reactor-http-nio-8] - 98 - AuthService log - account:cc.yysy.utilscommon.entity.User@56af9dea[admin, user]admin
+14:36:48.906 [reactor-http-nio-8] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@56af9dea
+14:36:48.906 [reactor-http-nio-8] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜1231","userType":"admin","username":"admin"}
+14:39:13.325 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-datasource/admin/rawImageList/
+14:39:13.326 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+14:39:13.327 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+14:39:13.327 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+14:39:13.329 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+14:39:13.329 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /detect-yolo/**
+14:39:13.330 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /detect-yolo/v2/api-docs
+14:39:13.331 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-ai/**
+14:39:13.331 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-ai/v2/api-docs
+14:39:13.332 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /api-datasource/v2/api-docs
+14:39:13.333 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-datasource/v2/api-docs
+14:39:13.334 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-area/v2/api-docs
+14:39:13.335 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-obstacle/v2/api-docs
+14:39:13.336 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-subscription/v2/api-docs
+14:39:13.337 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-datasource/admin/image
+14:39:13.338 [reactor-http-nio-1] - 94 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:39:13.339 [reactor-http-nio-1] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MjM0NjI0MSwiaWF0IjoxNjgxNjI2MjQxfQ.Z19lIhIje_xj7pP1IUNrLRcs_zfl69YvPFRpKn3f1tA
+14:39:13.357 [reactor-http-nio-1] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@74027a05
+14:39:13.360 [reactor-http-nio-1] - 84 - AuthService log - /service-datasource/admin/rawImageList/
+14:39:13.361 [reactor-http-nio-1] - 148 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+14:39:13.362 [reactor-http-nio-1] - 86 - AuthService log - perms[admin]
+14:39:13.363 [reactor-http-nio-1] - 88 - AuthService log - false
+14:39:13.363 [reactor-http-nio-1] - 93 - AuthService log - 进一步判断用户权限
+14:39:13.364 [reactor-http-nio-1] - 98 - AuthService log - account:cc.yysy.utilscommon.entity.User@74027a05[admin, user]admin
+14:39:13.365 [reactor-http-nio-1] - 103 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@74027a05
+14:39:13.365 [reactor-http-nio-1] - 104 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜1231","userType":"admin","username":"admin"}
+16:11:47.838 [Thread-36] - 53 - c.n.l.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+16:11:47.865 [Thread-22] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+16:11:47.865 [Thread-22] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.

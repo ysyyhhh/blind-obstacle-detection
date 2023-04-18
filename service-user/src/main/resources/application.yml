@@ -1,0 +1,41 @@
+server:
+  port: 8081
+swagger:
+  enabled: true
+  base-package: cc.yysy.serviceuser
+  version: V1.0
+  description: 用户服务
+  terms-of-service-url: http://localhost:8001/doc.html
+spring:
+  application:
+    name: service-user
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blind_obstacle_detection?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: remote
+    password: REDACTED
+    tomcat:
+      initSQL: SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci
+#  jpa:
+#    properties:
+#      hibernate:
+#        hbm2ddl:
+#          auto: update
+#        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: Asia/Shanghai
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+##  mapper-locations: classpath*:mapper/*.xml
+#logging:
+#  config: logback-timetable.xml
+#  level:
+#    cc:
+#      yysy:
+#        apigateway: info

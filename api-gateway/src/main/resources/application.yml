@@ -1,0 +1,87 @@
+# 应用名称
+server:
+  port: 8700
+spring:
+  # 配置文件上传大小限制
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  application:
+    name: api-gateway
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blind_obstacle_detection?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: remote
+    password: REDACTED
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedHeaders: "*"
+            allowedOrigins: "*"
+            allowCredentials: true
+            allowedMethods:
+              - GET
+              - POST
+              - DELETE
+              - PUT
+              - OPTION
+      discovery:
+        locator:
+          enabled: true # 让gateway可以发现nacos中的微服务
+      routes:
+        - id: service_user_route
+          uri: lb://service-user # lb指的是从nacos中按照名称获取微服务,并遵循负载均衡策略
+          order: 1
+          predicates:
+            - Path=/service-user/**
+          filters:
+            - StripPrefix=1
+#            - Log=true,false #控制日志是否开启
+#            - SetStatus=250
+#    gateway:
+#      routes: #路由数组 当请求满足什么条件时，转发到什么微服务上
+#        - id: product_route #当前路由发的标识，要求唯一,默认是UID
+#          uri: http://localhost:8081 #请求最终要被转发的微服务地址
+#          order: 1 #路由的优先级，数字越小，优先级越高
+#          predicates: #断言数组，（（多）条件判断，返回值是boolean，是转发的条件）
+#            - Path=/product-serv/** #当请求路径满足，Path指定的规则时，路由信息正常转发
+#          filters: #过滤器（请求传递过程中 对请求做的一些手脚,比如删一些东西）
+#            - StripPrefix=1 #在请求转发之前去掉一层路径
+org:
+  my:
+    jwt:
+      #跳过认证的路由
+      skip-auth-urls:
+        - /service-user/login/getPubKey
+        - /service-user/login/login
+        - /service-user/login/signup
+        - /service-user/v2/api-docs
+        - /detect-yolo/**
+        - /detect-yolo/v2/api-docs
+        - /service-ai/**
+        - /service-ai/v2/api-docs
+        - /api-datasource/v2/api-docs
+        - /service-datasource/v2/api-docs
+        - /service-area/v2/api-docs
+        - /service-obstacle/v2/api-docs
+        - /service-subscription/v2/api-docs
+        - /service-datasource/admin/image
+      ############################################
+      #   有效时长
+      #     单位：d:天、h:小时、m:分钟、s:秒
+      ###########################################
+      effective-time: 1m
+
+logging:
+  config: logback-api.xml
+  level:
+    cc:
+      yysy:
+        apigateway: info
+

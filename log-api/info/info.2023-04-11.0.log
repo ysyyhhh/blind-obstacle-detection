@@ -1,0 +1,326 @@
+08:03:15.293 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+08:03:16.104 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+08:03:16.124 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+08:03:16.424 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=f55f6ad8-04c5-3cd3-8a4d-5a7f0d640994
+08:03:16.465 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:03:16.675 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cfe69c00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:03:16.705 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec009efd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:03:17.272 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+08:03:17.533 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+08:03:17.716 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+08:03:17.959 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+08:03:17.960 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+08:03:18.231 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+08:03:18.502 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08:03:18.804 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:03:20.520 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+08:03:20.520 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+08:03:20.530 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+08:03:20.530 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+08:03:20.530 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+08:03:20.530 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+08:03:20.530 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+08:03:20.530 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+08:03:20.530 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+08:03:20.530 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+08:03:20.540 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+08:03:20.540 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+08:03:20.540 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+08:03:20.580 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+08:03:20.580 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+08:03:21.103 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+08:03:22.479 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+08:03:22.590 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+08:03:22.590 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 10.5594829 seconds (JVM running for 13.292)
+09:30:07.537 [reactor-http-nio-2] - 40 - JWTAuthFilter log - /service-user/login/getPubKey
+09:30:07.538 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+09:30:07.595 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/login
+09:30:07.595 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/signup
+09:30:07.595 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+09:30:07.596 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+09:30:07.597 [reactor-http-nio-2] - 46 - JWTAuthFilter log - pass!!!
+09:30:08.517 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:30:08.568 [reactor-http-nio-2] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+09:30:08.578 [reactor-http-nio-2] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+09:30:08.604 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:30:08.607 [reactor-http-nio-2] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[192.168.220.1:8081],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8081;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@49a4973d
+09:30:09.582 [reactor-http-nio-7] - 40 - JWTAuthFilter log - /service-user/login/login
+09:30:09.583 [reactor-http-nio-7] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+09:30:09.583 [reactor-http-nio-7] - 42 - JWTAuthFilter log - /service-user/login/login
+09:30:09.583 [reactor-http-nio-7] - 42 - JWTAuthFilter log - /service-user/login/signup
+09:30:09.584 [reactor-http-nio-7] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+09:30:09.584 [reactor-http-nio-7] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+09:30:09.584 [reactor-http-nio-7] - 46 - JWTAuthFilter log - pass!!!
+09:30:09.592 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+09:30:10.177 [reactor-http-nio-8] - 40 - JWTAuthFilter log - /service-user/user/getUser
+09:30:10.177 [reactor-http-nio-8] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+09:30:10.178 [reactor-http-nio-8] - 42 - JWTAuthFilter log - /service-user/login/login
+09:30:10.178 [reactor-http-nio-8] - 42 - JWTAuthFilter log - /service-user/login/signup
+09:30:10.178 [reactor-http-nio-8] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+09:30:10.179 [reactor-http-nio-8] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+09:30:10.179 [reactor-http-nio-8] - 55 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5NjYxMCwiaWF0IjoxNjgxMTc2NjEwfQ.CzTY05xXeY3EmdsO6Xh0hm6U05H7MUUhN6JGSob6ZKo
+09:30:10.180 [reactor-http-nio-8] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5NjYxMCwiaWF0IjoxNjgxMTc2NjEwfQ.CzTY05xXeY3EmdsO6Xh0hm6U05H7MUUhN6JGSob6ZKo
+09:30:10.416 [reactor-http-nio-8] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@27abef00
+09:30:10.437 [reactor-http-nio-8] - 77 - AuthService log - /service-user/user/getUser
+09:30:10.445 [reactor-http-nio-8] - 141 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+09:30:10.446 [reactor-http-nio-8] - 79 - AuthService log - authc
+09:30:10.446 [reactor-http-nio-8] - 81 - AuthService log - false
+09:30:10.447 [reactor-http-nio-8] - 63 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@27abef00
+09:30:10.453 [reactor-http-nio-8] - 64 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+10:23:28.709 [reactor-http-nio-2] - 40 - JWTAuthFilter log - /service-datasource/minio/upload
+10:23:28.711 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+10:23:28.712 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/login
+10:23:28.714 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/signup
+10:23:28.714 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+10:23:28.714 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+10:24:14.359 [reactor-http-nio-3] - 40 - JWTAuthFilter log - /service-user/user/getUser
+10:24:14.359 [reactor-http-nio-3] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+10:24:14.360 [reactor-http-nio-3] - 42 - JWTAuthFilter log - /service-user/login/login
+10:24:14.360 [reactor-http-nio-3] - 42 - JWTAuthFilter log - /service-user/login/signup
+10:24:14.361 [reactor-http-nio-3] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+10:24:14.361 [reactor-http-nio-3] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+10:24:14.362 [reactor-http-nio-3] - 55 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5NjYxMCwiaWF0IjoxNjgxMTc2NjEwfQ.CzTY05xXeY3EmdsO6Xh0hm6U05H7MUUhN6JGSob6ZKo
+10:24:14.363 [reactor-http-nio-3] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5NjYxMCwiaWF0IjoxNjgxMTc2NjEwfQ.CzTY05xXeY3EmdsO6Xh0hm6U05H7MUUhN6JGSob6ZKo
+10:24:14.414 [reactor-http-nio-3] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@691f672
+10:24:14.417 [reactor-http-nio-3] - 77 - AuthService log - /service-user/user/getUser
+10:24:14.417 [reactor-http-nio-3] - 141 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+10:24:14.418 [reactor-http-nio-3] - 79 - AuthService log - authc
+10:24:14.418 [reactor-http-nio-3] - 81 - AuthService log - false
+10:24:14.419 [reactor-http-nio-3] - 63 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@691f672
+10:24:14.419 [reactor-http-nio-3] - 64 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+10:24:18.918 [reactor-http-nio-4] - 40 - JWTAuthFilter log - /service-user/user/getUser
+10:24:18.919 [reactor-http-nio-4] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+10:24:18.919 [reactor-http-nio-4] - 42 - JWTAuthFilter log - /service-user/login/login
+10:24:18.920 [reactor-http-nio-4] - 42 - JWTAuthFilter log - /service-user/login/signup
+10:24:18.920 [reactor-http-nio-4] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+10:24:18.920 [reactor-http-nio-4] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+10:24:18.921 [reactor-http-nio-4] - 55 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5NjYxMCwiaWF0IjoxNjgxMTc2NjEwfQ.CzTY05xXeY3EmdsO6Xh0hm6U05H7MUUhN6JGSob6ZKo
+10:24:18.921 [reactor-http-nio-4] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5NjYxMCwiaWF0IjoxNjgxMTc2NjEwfQ.CzTY05xXeY3EmdsO6Xh0hm6U05H7MUUhN6JGSob6ZKo
+10:24:18.936 [reactor-http-nio-4] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@3fecd1bf
+10:24:18.938 [reactor-http-nio-4] - 77 - AuthService log - /service-user/user/getUser
+10:24:18.938 [reactor-http-nio-4] - 141 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+10:24:18.939 [reactor-http-nio-4] - 79 - AuthService log - authc
+10:24:18.939 [reactor-http-nio-4] - 81 - AuthService log - false
+10:24:18.940 [reactor-http-nio-4] - 63 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@3fecd1bf
+10:24:18.940 [reactor-http-nio-4] - 64 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+10:24:35.413 [reactor-http-nio-5] - 40 - JWTAuthFilter log - /service-user/login/getPubKey
+10:24:35.413 [reactor-http-nio-5] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+10:24:35.414 [reactor-http-nio-5] - 42 - JWTAuthFilter log - /service-user/login/login
+10:24:35.414 [reactor-http-nio-5] - 42 - JWTAuthFilter log - /service-user/login/signup
+10:24:35.414 [reactor-http-nio-5] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+10:24:35.414 [reactor-http-nio-5] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+10:24:35.415 [reactor-http-nio-5] - 46 - JWTAuthFilter log - pass!!!
+10:24:35.660 [reactor-http-nio-6] - 40 - JWTAuthFilter log - /service-user/login/login
+10:24:35.661 [reactor-http-nio-6] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+10:24:35.661 [reactor-http-nio-6] - 42 - JWTAuthFilter log - /service-user/login/login
+10:24:35.661 [reactor-http-nio-6] - 42 - JWTAuthFilter log - /service-user/login/signup
+10:24:35.661 [reactor-http-nio-6] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+10:24:35.662 [reactor-http-nio-6] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+10:24:35.662 [reactor-http-nio-6] - 46 - JWTAuthFilter log - pass!!!
+10:24:35.803 [reactor-http-nio-7] - 40 - JWTAuthFilter log - /service-user/user/getUser
+10:24:35.804 [reactor-http-nio-7] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+10:24:35.804 [reactor-http-nio-7] - 42 - JWTAuthFilter log - /service-user/login/login
+10:24:35.804 [reactor-http-nio-7] - 42 - JWTAuthFilter log - /service-user/login/signup
+10:24:35.805 [reactor-http-nio-7] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+10:24:35.805 [reactor-http-nio-7] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+10:24:35.805 [reactor-http-nio-7] - 55 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5OTg3NSwiaWF0IjoxNjgxMTc5ODc1fQ.EdJQ8OjMDKTkq5fmdZ7_kpo9NjTZamTfM2G-3OTXVdg
+10:24:35.805 [reactor-http-nio-7] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5OTg3NSwiaWF0IjoxNjgxMTc5ODc1fQ.EdJQ8OjMDKTkq5fmdZ7_kpo9NjTZamTfM2G-3OTXVdg
+10:24:35.814 [reactor-http-nio-7] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@2db19485
+10:24:35.816 [reactor-http-nio-7] - 77 - AuthService log - /service-user/user/getUser
+10:24:35.817 [reactor-http-nio-7] - 141 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+10:24:35.817 [reactor-http-nio-7] - 79 - AuthService log - authc
+10:24:35.818 [reactor-http-nio-7] - 81 - AuthService log - false
+10:24:35.818 [reactor-http-nio-7] - 63 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@2db19485
+10:24:35.818 [reactor-http-nio-7] - 64 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+10:25:31.849 [reactor-http-nio-2] - 40 - JWTAuthFilter log - /service-datasource/minio/upload
+10:25:31.850 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+10:25:31.850 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/login
+10:25:31.851 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/signup
+10:25:31.851 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+10:25:31.851 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+10:25:31.851 [reactor-http-nio-2] - 55 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5OTg3NSwiaWF0IjoxNjgxMTc5ODc1fQ.EdJQ8OjMDKTkq5fmdZ7_kpo9NjTZamTfM2G-3OTXVdg
+10:25:31.851 [reactor-http-nio-2] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5OTg3NSwiaWF0IjoxNjgxMTc5ODc1fQ.EdJQ8OjMDKTkq5fmdZ7_kpo9NjTZamTfM2G-3OTXVdg
+10:25:31.863 [reactor-http-nio-2] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@77c90682
+10:25:31.865 [reactor-http-nio-2] - 77 - AuthService log - /service-datasource/minio/upload
+10:25:31.865 [reactor-http-nio-2] - 141 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+10:25:31.866 [reactor-http-nio-2] - 79 - AuthService log - perms[admin]
+10:25:31.866 [reactor-http-nio-2] - 81 - AuthService log - false
+10:25:31.866 [reactor-http-nio-2] - 86 - AuthService log - 进一步判断用户权限
+10:25:31.867 [reactor-http-nio-2] - 91 - AuthService log - account:cc.yysy.utilscommon.entity.User@77c90682[admin, user]admin
+10:25:31.867 [reactor-http-nio-2] - 63 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@77c90682
+10:25:31.867 [reactor-http-nio-2] - 64 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+10:25:31.940 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-datasource.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+10:25:31.946 [reactor-http-nio-2] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-datasource instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-datasource,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+10:25:31.948 [reactor-http-nio-2] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+10:25:31.949 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-datasource.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+10:25:31.950 [reactor-http-nio-2] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-datasource initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-datasource,current list of Servers=[192.168.220.1:8086],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8086;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@7103ca30
+10:25:32.962 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-datasource.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+10:44:36.971 [reactor-http-nio-2] - 40 - JWTAuthFilter log - /service-datasource/minio/upload
+10:44:36.972 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+10:44:36.972 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/login
+10:44:36.973 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/signup
+10:44:36.973 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+10:44:36.973 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+10:44:36.973 [reactor-http-nio-2] - 55 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5OTg3NSwiaWF0IjoxNjgxMTc5ODc1fQ.EdJQ8OjMDKTkq5fmdZ7_kpo9NjTZamTfM2G-3OTXVdg
+10:44:36.974 [reactor-http-nio-2] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5OTg3NSwiaWF0IjoxNjgxMTc5ODc1fQ.EdJQ8OjMDKTkq5fmdZ7_kpo9NjTZamTfM2G-3OTXVdg
+10:44:36.988 [reactor-http-nio-2] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@74d188f7
+10:44:36.989 [reactor-http-nio-2] - 77 - AuthService log - /service-datasource/minio/upload
+10:44:36.990 [reactor-http-nio-2] - 141 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+10:44:36.990 [reactor-http-nio-2] - 79 - AuthService log - perms[admin]
+10:44:36.990 [reactor-http-nio-2] - 81 - AuthService log - false
+10:44:36.991 [reactor-http-nio-2] - 86 - AuthService log - 进一步判断用户权限
+10:44:36.991 [reactor-http-nio-2] - 91 - AuthService log - account:cc.yysy.utilscommon.entity.User@74d188f7[admin, user]admin
+10:44:36.991 [reactor-http-nio-2] - 63 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@74d188f7
+10:44:36.991 [reactor-http-nio-2] - 64 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+10:52:24.545 [reactor-http-nio-2] - 40 - JWTAuthFilter log - /service-datasource/minio/upload
+10:52:24.546 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/getPubKey
+10:52:24.547 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/login
+10:52:24.547 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/login/signup
+10:52:24.548 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-user/v2/api-docs
+10:52:24.548 [reactor-http-nio-2] - 42 - JWTAuthFilter log - /service-datasource/admin/image
+10:52:24.548 [reactor-http-nio-2] - 55 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5OTg3NSwiaWF0IjoxNjgxMTc5ODc1fQ.EdJQ8OjMDKTkq5fmdZ7_kpo9NjTZamTfM2G-3OTXVdg
+10:52:24.548 [reactor-http-nio-2] - 35 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxMCIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MTg5OTg3NSwiaWF0IjoxNjgxMTc5ODc1fQ.EdJQ8OjMDKTkq5fmdZ7_kpo9NjTZamTfM2G-3OTXVdg
+10:52:24.561 [reactor-http-nio-2] - 55 - AuthService log - cc.yysy.utilscommon.entity.User@49a52e43
+10:52:24.562 [reactor-http-nio-2] - 77 - AuthService log - /service-datasource/minio/upload
+10:52:24.563 [reactor-http-nio-2] - 141 - AuthService log - {/service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-obstacle/user/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc, /**=perms[admin]}
+10:52:24.563 [reactor-http-nio-2] - 79 - AuthService log - perms[admin]
+10:52:24.563 [reactor-http-nio-2] - 81 - AuthService log - false
+10:52:24.563 [reactor-http-nio-2] - 86 - AuthService log - 进一步判断用户权限
+10:52:24.564 [reactor-http-nio-2] - 91 - AuthService log - account:cc.yysy.utilscommon.entity.User@49a52e43[admin, user]admin
+10:52:24.564 [reactor-http-nio-2] - 63 - JWTAuthFilter log - 存入header的user cc.yysy.utilscommon.entity.User@49a52e43
+10:52:24.564 [reactor-http-nio-2] - 64 - JWTAuthFilter log - {"id":5,"password":"$2a$10$ZAHv4bmf6eTtbSN8eboMs.sjnYybw5G5p4i61/rJmS66W3qstTA3C","phoneNumber":"12345678910","realName":"溜溜溜","userType":"admin","username":"admin"}
+12:23:35.313 [Thread-42] - 53 - c.n.l.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+12:23:35.373 [Thread-28] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+12:23:35.396 [Thread-28] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+12:23:35.436 [Thread-28] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:23:35.598 [Thread-28] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:23:35.608 [Thread-28] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:35:44.666 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+14:35:45.735 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:35:45.765 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+14:35:46.086 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=f55f6ad8-04c5-3cd3-8a4d-5a7f0d640994
+14:35:46.116 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:35:46.216 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3509a429] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:35:46.246 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5123a726] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:35:46.639 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:35:46.905 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:35:47.025 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+14:35:47.373 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+14:35:47.383 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+14:35:47.705 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+14:35:48.124 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14:35:48.577 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+14:35:51.362 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+14:35:51.402 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:35:51.402 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:35:52.069 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+14:35:54.574 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+14:35:54.694 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+14:35:54.694 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 14.5446744 seconds (JVM running for 19.075)
+14:54:25.394 [Thread-29] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+14:54:25.406 [Thread-29] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+14:54:25.406 [Thread-29] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:54:25.446 [Thread-29] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:54:25.456 [Thread-29] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+19:57:22.037 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+19:57:22.986 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+19:57:23.018 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+19:57:23.589 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=f55f6ad8-04c5-3cd3-8a4d-5a7f0d640994
+19:57:23.637 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:57:23.821 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4c8ebfbb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:57:23.853 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$68a8c2b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:57:24.369 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:57:24.609 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:57:24.729 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:57:24.977 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+19:57:24.985 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+19:57:25.323 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+19:57:25.874 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:57:26.381 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:57:29.547 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+19:57:29.547 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+19:57:29.547 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+19:57:29.555 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+19:57:29.555 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+19:57:29.555 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+19:57:29.555 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+19:57:29.555 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+19:57:29.555 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+19:57:29.555 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+19:57:29.555 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+19:57:29.555 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+19:57:29.555 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+19:57:29.587 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:57:29.587 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:57:30.357 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+19:57:32.358 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+19:57:32.526 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+19:57:32.526 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 14.6972713 seconds (JVM running for 18.418)
+20:15:02.670 [Thread-37] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+20:15:02.679 [Thread-37] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+20:15:02.687 [Thread-37] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:15:02.720 [Thread-37] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:15:02.749 [Thread-37] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:53:57.382 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+20:54:01.023 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+20:54:01.323 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94ms. Found 0 repository interfaces.
+20:54:03.828 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=f55f6ad8-04c5-3cd3-8a4d-5a7f0d640994
+20:54:04.116 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:05.193 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b27b778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:05.586 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2741ba75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:10.584 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:54:13.250 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:54:16.944 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:54:19.501 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+20:54:19.576 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+20:54:22.292 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+20:54:23.727 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:54:25.062 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:54:40.365 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+20:54:40.368 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+20:54:40.371 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+20:54:40.374 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+20:54:40.376 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+20:54:40.379 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+20:54:40.380 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+20:54:40.382 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+20:54:40.385 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+20:54:40.388 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+20:54:40.391 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+20:54:40.392 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+20:54:40.393 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+20:54:40.591 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+20:54:40.632 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+20:54:46.809 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+20:54:58.484 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+20:54:59.092 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+20:54:59.101 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 75.6488973 seconds (JVM running for 83.032)
+21:24:01.412 [Thread-95] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+21:24:01.417 [Thread-95] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+21:24:01.422 [Thread-95] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:24:01.457 [Thread-95] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:24:01.467 [Thread-95] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

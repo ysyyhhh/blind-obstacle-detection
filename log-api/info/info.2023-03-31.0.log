@@ -1,0 +1,910 @@
+20:22:56.242 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+20:22:57.891 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+20:22:57.959 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46ms. Found 0 repository interfaces.
+20:22:58.510 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=e275fe03-8d63-3dfd-ad60-d3096da071b5
+20:22:58.597 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:22:59.000 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5af0874b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:22:59.039 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$770a8a48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:23:00.229 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:23:00.880 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:23:01.239 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:23:01.526 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+20:23:01.541 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+20:23:02.639 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+20:23:03.205 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:23:03.640 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:23:06.742 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+20:23:06.743 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+20:23:06.744 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+20:23:06.744 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+20:23:06.745 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+20:23:06.745 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+20:23:06.745 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+20:23:06.746 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+20:23:06.746 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+20:23:06.746 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+20:23:06.746 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+20:23:06.747 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+20:23:06.747 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+20:23:06.781 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+20:23:06.786 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+20:23:07.492 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+20:23:08.399 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+20:23:08.562 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+20:23:08.565 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 19.9520604 seconds (JVM running for 26.784)
+20:25:59.375 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login
+20:25:59.377 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:25:59.378 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+20:25:59.379 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:25:59.379 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:27:21.389 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login
+20:27:21.390 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:27:21.391 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+20:27:21.391 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:27:21.391 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:29:24.862 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+20:29:24.864 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:29:24.866 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+20:29:24.867 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:29:24.868 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:29:24.869 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+20:29:26.058 [reactor-http-nio-6] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+20:29:26.111 [reactor-http-nio-6] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+20:29:26.122 [reactor-http-nio-6] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+20:29:26.143 [reactor-http-nio-6] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+20:29:26.144 [reactor-http-nio-6] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[192.168.220.1:8081],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8081;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@11957124
+20:29:27.128 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+20:29:43.593 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/login
+20:29:43.594 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:29:43.594 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+20:29:43.595 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:29:43.595 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:29:43.595 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+20:31:36.425 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/login
+20:31:36.425 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:31:36.426 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+20:31:36.427 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:31:36.429 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:31:36.429 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+20:31:45.263 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/login
+20:31:45.264 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:31:45.265 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+20:31:45.265 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:31:45.266 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:31:45.266 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+20:31:49.726 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+20:31:49.726 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:31:49.727 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+20:31:49.728 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:31:49.728 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:31:49.728 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+20:31:58.252 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/login
+20:31:58.253 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:31:58.254 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+20:31:58.254 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:31:58.255 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:31:58.256 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+20:34:10.195 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/login
+20:34:10.195 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:34:10.196 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+20:34:10.196 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:34:10.197 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:34:10.197 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+20:35:23.946 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:23.947 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:23.948 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:23.948 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:23.949 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:23.949 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+20:35:31.731 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:31.732 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:31.732 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:31.732 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:31.732 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:31.733 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+20:35:46.404 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:46.404 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:46.405 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:46.406 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:46.406 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:46.407 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+20:35:48.669 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:48.669 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:48.670 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:48.671 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:48.671 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:48.672 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+20:35:50.139 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:50.140 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:50.140 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:50.141 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:50.141 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:50.141 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+20:35:50.959 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:50.959 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:50.960 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:50.960 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:50.961 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:50.961 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+20:35:52.027 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:52.027 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:52.028 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:52.028 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:52.028 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:52.028 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+20:35:52.697 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:52.698 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:52.698 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:52.698 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:52.699 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:52.699 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+20:35:53.845 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:53.845 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:53.846 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:53.846 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:53.846 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:53.846 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+20:35:54.553 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:54.554 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:54.554 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:54.554 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:54.554 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:54.555 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+20:35:55.846 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:55.847 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:55.847 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:55.848 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:55.848 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:55.848 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+20:35:56.468 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:56.469 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:56.469 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:56.469 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:56.469 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:56.470 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+20:35:57.568 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/login
+20:35:57.568 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:35:57.569 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+20:35:57.569 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:35:57.569 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:35:57.569 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+20:36:27.439 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+20:36:27.440 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:36:27.441 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+20:36:27.441 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:36:27.441 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:36:27.442 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+20:37:05.786 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/v2/api-docs
+20:37:05.787 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:37:05.788 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+20:37:05.788 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:37:05.789 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:37:05.789 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+20:38:01.586 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+20:38:01.588 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:38:01.589 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+20:38:01.590 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:38:01.591 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:38:01.592 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+20:40:15.769 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+20:40:15.770 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:40:15.770 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+20:40:15.771 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:40:15.771 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:40:15.771 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+20:40:15.898 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/login
+20:40:15.898 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:40:15.898 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+20:40:15.899 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:40:15.899 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:40:15.899 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+20:40:19.883 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+20:40:19.884 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:40:19.884 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+20:40:19.885 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:40:19.886 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:40:19.886 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+20:40:19.904 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/login
+20:40:19.905 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:40:19.905 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+20:40:19.906 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:40:19.906 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:40:19.906 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+20:42:39.861 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+20:42:39.862 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:42:39.863 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+20:42:39.864 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:42:39.865 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:42:39.866 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+20:45:41.801 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+20:45:41.802 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:45:41.802 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+20:45:41.803 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:45:41.803 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:45:41.803 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+20:52:45.780 [Thread-51] - 53 - c.n.l.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+20:52:45.792 [Thread-33] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+20:52:45.803 [Thread-33] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+20:52:45.818 [Thread-33] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:52:45.836 [Thread-33] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:52:45.851 [Thread-33] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+21:05:35.999 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+21:05:36.805 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+21:05:36.841 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+21:05:37.112 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=e275fe03-8d63-3dfd-ad60-d3096da071b5
+21:05:37.144 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:05:37.252 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c54d9f0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:05:37.279 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e167a20b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:05:37.590 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+21:05:37.749 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+21:05:37.820 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+21:05:38.036 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+21:05:38.040 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+21:05:38.260 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+21:05:38.477 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+21:05:38.757 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+21:05:41.022 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+21:05:41.022 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+21:05:41.023 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+21:05:41.023 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+21:05:41.023 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+21:05:41.024 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+21:05:41.024 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+21:05:41.024 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+21:05:41.024 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+21:05:41.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+21:05:41.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+21:05:41.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+21:05:41.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+21:05:41.051 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:05:41.056 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+21:05:41.566 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+21:05:42.140 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+21:05:42.262 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+21:05:42.263 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 9.2215453 seconds (JVM running for 12.503)
+21:05:53.259 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:05:53.260 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:05:53.260 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+21:05:53.261 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:05:53.261 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:05:53.261 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+21:05:53.935 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+21:05:53.970 [reactor-http-nio-2] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+21:05:53.977 [reactor-http-nio-2] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+21:05:53.993 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+21:05:53.995 [reactor-http-nio-2] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[192.168.220.1:8081],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8081;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@1877e9bb
+21:05:54.981 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+21:06:37.272 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:06:37.274 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:06:37.274 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+21:06:37.274 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:06:37.274 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:06:37.276 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+21:14:41.768 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:14:41.768 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:14:41.769 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+21:14:41.769 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:14:41.770 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:14:41.770 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+21:39:26.909 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:39:26.910 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:39:26.911 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+21:39:26.912 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:39:26.912 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:39:26.913 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+21:39:57.128 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:39:57.130 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:39:57.131 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+21:39:57.131 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:39:57.132 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:39:57.132 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+21:41:22.513 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:41:22.514 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:41:22.515 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+21:41:22.516 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:41:22.517 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:41:22.518 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+21:41:50.230 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:41:50.231 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:41:50.232 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+21:41:50.232 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:41:50.233 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:41:50.233 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+21:42:44.641 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:42:44.642 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:42:44.643 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+21:42:44.643 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:42:44.644 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:42:44.644 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+21:43:12.403 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:43:12.404 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:43:12.405 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+21:43:12.405 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:43:12.406 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:43:12.406 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+21:43:39.432 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:43:39.433 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:43:39.434 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+21:43:39.435 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:43:39.436 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:43:39.436 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+21:44:26.617 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:44:26.619 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:44:26.619 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+21:44:26.619 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:44:26.620 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:44:26.620 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+21:44:52.069 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+21:44:52.070 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+21:44:52.071 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+21:44:52.071 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+21:44:52.072 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+21:44:52.072 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+21:45:04.521 [Thread-40] - 53 - c.n.l.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+21:45:04.532 [Thread-28] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+21:45:04.536 [Thread-28] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+21:45:04.549 [Thread-28] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+21:45:04.562 [Thread-28] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+21:45:04.567 [Thread-28] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+22:01:14.456 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+22:01:15.218 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+22:01:15.258 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+22:01:15.542 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=e275fe03-8d63-3dfd-ad60-d3096da071b5
+22:01:15.573 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:15.663 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b27b778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:15.693 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2741ba75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:01:16.016 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+22:01:16.207 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+22:01:16.307 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+22:01:16.545 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+22:01:16.545 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+22:01:16.857 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+22:01:17.248 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+22:01:17.689 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+22:01:20.285 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+22:01:20.295 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+22:01:20.326 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:01:20.336 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+22:01:21.264 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+22:01:22.208 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+22:01:22.348 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+22:01:22.348 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 10.0747927 seconds (JVM running for 12.009)
+22:01:55.513 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:01:55.513 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:01:55.513 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+22:01:55.513 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:01:55.513 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:01:55.513 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+22:01:56.225 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+22:01:56.265 [reactor-http-nio-2] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+22:01:56.273 [reactor-http-nio-2] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+22:01:56.289 [reactor-http-nio-2] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+22:01:56.297 [reactor-http-nio-2] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[192.168.220.1:8081],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8081;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@1cfc0a0e
+22:01:57.283 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+22:03:43.780 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:03:43.780 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:03:43.780 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+22:03:43.788 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:03:43.788 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:03:43.788 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+22:06:45.132 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:06:45.140 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:06:45.140 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+22:06:45.140 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:06:45.140 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:06:45.140 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+22:07:07.957 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:07:07.957 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:07:07.957 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+22:07:07.957 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:07:07.957 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:07:07.957 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+22:07:08.005 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/login
+22:07:08.005 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:07:08.005 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+22:07:08.005 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:07:08.005 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:07:08.005 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+22:08:45.920 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:08:45.920 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:08:45.928 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:08:45.928 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:08:45.928 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:08:45.928 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:08:46.404 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/login
+22:08:46.404 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:08:46.404 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+22:08:46.404 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:08:46.412 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:08:46.412 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+22:09:27.785 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:09:27.785 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:09:27.785 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+22:09:27.785 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:09:27.785 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:09:27.785 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+22:09:27.849 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+22:09:27.849 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:09:27.849 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:09:27.849 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:09:27.849 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:09:27.849 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:09:42.348 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:09:42.348 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:09:42.348 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+22:09:42.348 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:09:42.356 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:09:42.356 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+22:09:42.605 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/login
+22:09:42.605 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:09:42.605 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+22:09:42.605 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:09:42.605 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:09:42.605 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+22:10:09.666 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:09.666 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:09.666 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+22:10:09.666 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:10:09.666 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:10:09.674 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+22:10:09.714 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/login
+22:10:09.714 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:09.714 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+22:10:09.722 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:10:09.722 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:10:09.722 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+22:10:13.194 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:13.194 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:13.194 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:10:13.194 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:10:13.194 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:10:13.194 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:10:13.442 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/login
+22:10:13.442 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:13.442 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+22:10:13.442 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:10:13.442 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:10:13.442 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+22:10:52.501 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:52.501 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:52.501 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+22:10:52.501 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:10:52.501 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:10:52.501 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+22:10:52.533 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+22:10:52.541 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:52.541 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:10:52.541 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:10:52.541 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:10:52.541 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:10:58.090 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:58.090 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:58.090 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+22:10:58.090 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:10:58.090 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:10:58.090 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+22:10:58.341 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/login
+22:10:58.341 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:10:58.341 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+22:10:58.341 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:10:58.341 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:10:58.341 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+22:11:35.775 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:11:35.775 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:11:35.775 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+22:11:35.775 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:11:35.775 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:11:35.775 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+22:11:36.135 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/login
+22:11:36.135 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:11:36.135 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+22:11:36.135 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:11:36.135 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:11:36.135 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+22:11:42.593 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:11:42.593 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:11:42.593 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:11:42.593 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:11:42.593 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:11:42.593 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:11:42.929 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/login
+22:11:42.929 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:11:42.929 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+22:11:42.929 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:11:42.929 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:11:42.929 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+22:16:47.321 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:16:47.321 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:16:47.321 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+22:16:47.321 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:16:47.321 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:16:47.321 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+22:16:47.666 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+22:16:47.666 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:16:47.666 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:16:47.666 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:16:47.666 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:16:47.666 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:17:12.259 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:17:12.259 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:17:12.259 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+22:17:12.259 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:17:12.259 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:17:12.259 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+22:17:12.299 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/login
+22:17:12.299 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:17:12.299 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+22:17:12.299 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:17:12.299 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:17:12.299 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+22:17:20.475 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:17:20.475 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:17:20.475 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+22:17:20.475 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:17:20.475 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:17:20.483 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+22:17:20.808 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/login
+22:17:20.808 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:17:20.808 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+22:17:20.808 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:17:20.808 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:17:20.808 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+22:19:02.209 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:19:02.209 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:19:02.209 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:19:02.209 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:19:02.209 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:19:02.209 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:19:02.514 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/login
+22:19:02.514 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:19:02.514 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+22:19:02.514 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:19:02.514 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:19:02.514 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+22:19:12.715 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:19:12.715 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:19:12.715 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+22:19:12.715 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:19:12.722 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:19:12.722 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+22:19:12.971 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+22:19:12.971 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:19:12.971 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:19:12.971 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:19:12.971 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:19:12.971 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:20:07.237 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:20:07.237 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:20:07.245 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+22:20:07.245 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:20:07.245 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:20:07.245 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+22:20:07.533 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/login
+22:20:07.541 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:20:07.541 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+22:20:07.541 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:20:07.541 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:20:07.541 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+22:24:39.092 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:24:39.092 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:24:39.092 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+22:24:39.092 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:24:39.092 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:24:39.092 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+22:24:39.124 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/login
+22:24:39.124 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:24:39.132 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+22:24:39.132 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:24:39.132 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:24:39.132 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+22:25:11.774 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:25:11.774 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:25:11.774 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:25:11.774 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:25:11.774 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:25:11.774 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:25:11.806 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/signup
+22:25:11.806 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:25:11.806 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:25:11.806 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:25:11.806 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:25:11.806 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:25:35.840 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:25:35.840 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:25:35.840 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:25:35.848 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:25:35.848 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:25:35.848 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:25:35.952 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/signup
+22:25:35.952 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:25:35.952 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:25:35.952 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:25:35.952 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:25:35.960 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:26:17.082 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:26:17.082 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:26:17.082 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+22:26:17.082 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:26:17.082 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:26:17.082 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+22:26:17.114 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/login
+22:26:17.114 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:26:17.114 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+22:26:17.114 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:26:17.114 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:26:17.114 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+22:26:22.034 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:26:22.034 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:26:22.034 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:26:22.034 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:26:22.034 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:26:22.034 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:26:22.266 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/login
+22:26:22.266 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:26:22.266 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+22:26:22.266 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:26:22.266 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:26:22.266 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+22:26:22.410 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/user/getUser
+22:26:22.410 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:26:22.410 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+22:26:22.410 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:26:22.410 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:28:09.898 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:28:09.898 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:28:09.898 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+22:28:09.898 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:28:09.898 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:28:09.898 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+22:28:09.938 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/login
+22:28:09.938 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:28:09.938 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+22:28:09.938 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:28:09.938 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:28:09.938 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+22:28:12.311 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:28:12.311 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:28:12.311 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:28:12.311 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:28:12.311 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:28:12.311 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:28:12.568 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/login
+22:28:12.568 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:28:12.568 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+22:28:12.568 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:28:12.568 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:28:12.568 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+22:28:18.621 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:28:18.621 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:28:18.621 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+22:28:18.621 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:28:18.621 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:28:18.621 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+22:28:18.653 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+22:28:18.653 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:28:18.653 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:28:18.653 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:28:18.653 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:28:18.653 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:28:19.089 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/user/getUser
+22:28:19.089 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:28:19.089 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+22:28:19.089 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:28:19.089 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:28:19.089 [reactor-http-nio-7] - 56 - JWTAuthFilter log - token = undefined
+22:28:19.089 [reactor-http-nio-7] - 36 - AuthService log - undefined
+22:29:07.910 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:29:07.910 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:29:07.910 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+22:29:07.910 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:29:07.910 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:29:07.910 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+22:29:07.950 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/login
+22:29:07.950 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:29:07.950 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+22:29:07.950 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:29:07.950 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:29:07.950 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+22:29:08.390 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/user/getUser
+22:29:08.390 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:29:08.390 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+22:29:08.390 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:29:08.390 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:29:08.390 [reactor-http-nio-2] - 56 - JWTAuthFilter log - token = undefined
+22:29:08.390 [reactor-http-nio-2] - 36 - AuthService log - undefined
+22:29:30.816 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:29:30.816 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:29:30.816 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:29:30.824 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:29:30.824 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:29:30.824 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:29:30.856 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/login
+22:29:30.856 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:29:30.856 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+22:29:30.856 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:29:30.856 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:29:30.856 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+22:29:31.292 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/user/getUser
+22:29:31.292 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:29:31.292 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+22:29:31.292 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:29:31.292 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:29:31.292 [reactor-http-nio-5] - 56 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5Mjk3MCwiaWF0IjoxNjgwMjcyOTcwfQ.wTScIJo1GK0BHiTfJwLupA6IyI5mpI5t6UqvenTC0Ig
+22:29:31.292 [reactor-http-nio-5] - 36 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5Mjk3MCwiaWF0IjoxNjgwMjcyOTcwfQ.wTScIJo1GK0BHiTfJwLupA6IyI5mpI5t6UqvenTC0Ig
+22:31:24.160 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:31:24.160 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:31:24.160 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:31:24.160 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:31:24.168 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:31:24.168 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:31:24.188 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+22:31:24.188 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:31:24.188 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:31:24.188 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:31:24.188 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:31:24.196 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:32:59.261 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:32:59.261 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:32:59.261 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:32:59.261 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:32:59.261 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:32:59.261 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:32:59.277 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+22:32:59.277 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:32:59.285 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:32:59.285 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:32:59.285 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:32:59.285 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:33:04.641 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:33:04.641 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:33:04.641 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+22:33:04.641 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:33:04.641 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:33:04.641 [reactor-http-nio-7] - 47 - JWTAuthFilter log - pass!!!
+22:33:04.905 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/login
+22:33:04.905 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:33:04.905 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+22:33:04.905 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:33:04.905 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:33:04.905 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+22:33:05.025 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/user/getUser
+22:33:05.025 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:33:05.025 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+22:33:05.025 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:33:05.025 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:33:05.025 [reactor-http-nio-1] - 56 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5MzE4NSwiaWF0IjoxNjgwMjczMTg1fQ.zPBXhyWeXsynz5UKZtE9Y6psMAyV3CiXFklVqapQ1Dk
+22:33:05.025 [reactor-http-nio-1] - 36 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5MzE4NSwiaWF0IjoxNjgwMjczMTg1fQ.zPBXhyWeXsynz5UKZtE9Y6psMAyV3CiXFklVqapQ1Dk
+22:35:01.967 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:35:01.967 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:35:01.967 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:35:01.967 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:35:01.967 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:35:01.967 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:35:01.991 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/signup
+22:35:01.991 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:35:01.991 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:35:01.991 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:35:01.991 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:35:01.991 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:35:06.745 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:35:06.745 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:35:06.745 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:35:06.745 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:35:06.745 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:35:06.745 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:35:06.886 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/signup
+22:35:06.886 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:35:06.886 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:35:06.886 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:35:06.886 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:35:06.886 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:35:13.680 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:35:13.680 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:35:13.680 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+22:35:13.680 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:35:13.680 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:35:13.680 [reactor-http-nio-2] - 47 - JWTAuthFilter log - pass!!!
+22:35:13.938 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/login
+22:35:13.938 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:35:13.938 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:35:13.938 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:35:13.938 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:35:13.938 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:35:14.057 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/user/getUser
+22:35:14.057 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:35:14.057 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+22:35:14.057 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:35:14.057 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:35:14.057 [reactor-http-nio-4] - 56 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5MzMxNCwiaWF0IjoxNjgwMjczMzE0fQ.wILQJKN5meqAUiiPRyBqHTtE5V8-N_MuYjl8wVYCOHE
+22:35:14.057 [reactor-http-nio-4] - 36 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5MzMxNCwiaWF0IjoxNjgwMjczMzE0fQ.wILQJKN5meqAUiiPRyBqHTtE5V8-N_MuYjl8wVYCOHE
+22:38:58.838 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:38:58.846 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:38:58.846 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+22:38:58.846 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:38:58.846 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:38:58.846 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+22:38:59.158 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/login/login
+22:38:59.158 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:38:59.158 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+22:38:59.158 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:38:59.158 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:38:59.158 [reactor-http-nio-6] - 47 - JWTAuthFilter log - pass!!!
+22:39:00.235 [reactor-http-nio-7] - 41 - JWTAuthFilter log - /service-user/user/getUser
+22:39:00.235 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:39:00.235 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/login
+22:39:00.235 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:39:00.235 [reactor-http-nio-7] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:39:00.242 [reactor-http-nio-7] - 56 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5MzUzOSwiaWF0IjoxNjgwMjczNTM5fQ.kVmR27O9OW14Vk44EFUaNK7XFDnehvlFKmRWxnPRMv0
+22:39:00.242 [reactor-http-nio-7] - 36 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5MzUzOSwiaWF0IjoxNjgwMjczNTM5fQ.kVmR27O9OW14Vk44EFUaNK7XFDnehvlFKmRWxnPRMv0
+22:41:55.516 [reactor-http-nio-8] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:41:55.516 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:41:55.516 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/login
+22:41:55.516 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:41:55.516 [reactor-http-nio-8] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:41:55.516 [reactor-http-nio-8] - 47 - JWTAuthFilter log - pass!!!
+22:41:55.861 [reactor-http-nio-1] - 41 - JWTAuthFilter log - /service-user/login/login
+22:41:55.861 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:41:55.861 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/login
+22:41:55.861 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:41:55.861 [reactor-http-nio-1] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:41:55.861 [reactor-http-nio-1] - 47 - JWTAuthFilter log - pass!!!
+22:41:56.669 [reactor-http-nio-2] - 41 - JWTAuthFilter log - /service-user/user/getUser
+22:41:56.669 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:41:56.669 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/login
+22:41:56.669 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:41:56.669 [reactor-http-nio-2] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:41:56.669 [reactor-http-nio-2] - 56 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5MzcxNiwiaWF0IjoxNjgwMjczNzE2fQ.AVyBmx_8JP5oEujOTvH5d_Ta9gtNTzK59LW1E9ENaQw
+22:41:56.669 [reactor-http-nio-2] - 36 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5MzcxNiwiaWF0IjoxNjgwMjczNzE2fQ.AVyBmx_8JP5oEujOTvH5d_Ta9gtNTzK59LW1E9ENaQw
+22:46:13.964 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/login/getPubKey
+22:46:13.964 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:46:13.964 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+22:46:13.964 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:46:13.964 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:46:13.964 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+22:46:14.292 [reactor-http-nio-4] - 41 - JWTAuthFilter log - /service-user/login/login
+22:46:14.292 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:46:14.292 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/login
+22:46:14.292 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:46:14.292 [reactor-http-nio-4] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:46:14.292 [reactor-http-nio-4] - 47 - JWTAuthFilter log - pass!!!
+22:46:15.367 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/user/getUser
+22:46:15.367 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+22:46:15.367 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+22:46:15.367 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+22:46:15.367 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+22:46:15.367 [reactor-http-nio-5] - 56 - JWTAuthFilter log - token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxOSIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5Mzk3NSwiaWF0IjoxNjgwMjczOTc1fQ.pLHWIWdV8lpDWQXsh5facV1PS-yrex3hItk1fXsOg7o
+22:46:15.367 [reactor-http-nio-5] - 36 - AuthService log - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxMjM0NTY3ODkxOSIsImlzcyI6Indvcmtob3VycyIsImV4cCI6MTY4MDk5Mzk3NSwiaWF0IjoxNjgwMjczOTc1fQ.pLHWIWdV8lpDWQXsh5facV1PS-yrex3hItk1fXsOg7o
+22:46:15.497 [reactor-http-nio-5] - 58 - AuthService log - cc.yysy.utilscommon.entity.User@48e3dda6
+22:46:15.505 [reactor-http-nio-5] - 80 - AuthService log - /service-user/user/getUser
+22:46:15.513 [reactor-http-nio-5] - 144 - AuthService log - {0=perms[admin], /service-timetable/timetable/**=authc, /service-timetable/task/**=authc, /service-user/api/test=authc, /service-user/api/getUser=authc, /service-timetable/classList/**=authc, /service-user/api/updateToken=authc, /service-user/user/**=authc}
+22:46:15.513 [reactor-http-nio-5] - 82 - AuthService log - authc
+22:46:15.513 [reactor-http-nio-5] - 84 - AuthService log - false
+22:46:27.531 [Thread-37] - 53 - c.n.l.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+22:46:27.531 [Thread-25] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+22:46:27.541 [Thread-25] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+22:46:27.551 [Thread-25] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+22:46:27.561 [Thread-25] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+22:46:27.570 [Thread-25] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

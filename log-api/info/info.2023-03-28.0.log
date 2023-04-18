@@ -1,0 +1,258 @@
+19:04:26.150 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+19:04:26.870 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+19:04:26.905 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+19:04:27.140 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=e275fe03-8d63-3dfd-ad60-d3096da071b5
+19:04:27.170 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:04:27.270 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9cf779c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:04:27.290 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b9117cbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:04:27.590 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:04:27.735 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:04:27.799 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:04:28.005 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+19:04:28.010 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+19:04:28.229 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+19:04:28.444 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:04:28.740 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+19:04:30.410 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+19:04:30.440 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:04:30.440 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:04:31.020 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+19:04:31.710 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+19:04:31.894 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+19:04:31.900 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 8.5213619 seconds (JVM running for 10.618)
+19:11:49.453 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/v2/api-docs
+19:11:49.453 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+19:11:49.453 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+19:11:49.453 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+19:11:59.388 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/v2/api-docs
+19:11:59.393 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+19:11:59.393 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+19:11:59.393 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+19:15:57.323 [Thread-26] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+19:15:57.332 [Thread-26] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+19:15:57.333 [Thread-26] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:15:57.343 [Thread-26] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:15:57.353 [Thread-26] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+19:16:07.553 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+19:16:08.133 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+19:16:08.153 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+19:16:08.343 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=e275fe03-8d63-3dfd-ad60-d3096da071b5
+19:16:08.368 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:16:08.453 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac5643ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:16:08.463 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c87046ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:16:08.693 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:16:08.813 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:16:08.878 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:16:09.048 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+19:16:09.048 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+19:16:09.213 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+19:16:09.383 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:16:09.593 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:16:11.193 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+19:16:11.203 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+19:16:11.223 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:16:11.233 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:16:11.782 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+19:16:12.433 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+19:16:12.563 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+19:16:12.563 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 6.9889943 seconds (JVM running for 8.685)
+19:16:28.102 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/v2/api-docs
+19:16:28.102 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+19:16:28.102 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+19:16:28.102 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+19:17:59.092 [Thread-24] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+19:17:59.100 [Thread-24] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+19:17:59.103 [Thread-24] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:17:59.112 [Thread-24] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:17:59.117 [Thread-24] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+19:18:07.683 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+19:18:08.362 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+19:18:08.402 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+19:18:08.643 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=e275fe03-8d63-3dfd-ad60-d3096da071b5
+19:18:08.673 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:18:08.763 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b27b778] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:18:08.782 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2741ba75] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:18:09.062 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:18:09.207 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:18:09.262 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:18:09.462 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+19:18:09.468 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+19:18:09.652 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+19:18:09.852 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:18:10.093 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+19:18:11.943 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+19:18:11.972 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:18:11.983 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:18:12.577 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+19:18:13.272 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+19:18:13.403 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+19:18:13.413 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 7.9747425 seconds (JVM running for 9.341)
+19:18:51.696 [reactor-http-nio-6] - 41 - JWTAuthFilter log - /service-user/v2/api-docs
+19:18:51.696 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+19:18:51.696 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/login
+19:18:51.696 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/login/signup
+19:18:51.696 [reactor-http-nio-6] - 43 - JWTAuthFilter log - /service-user/v2/**
+19:19:14.666 [Thread-25] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+19:19:14.673 [Thread-25] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+19:19:14.678 [Thread-25] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:19:14.685 [Thread-25] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:19:14.695 [Thread-25] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+19:19:21.005 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+19:19:21.621 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+19:19:21.649 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+19:19:21.845 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=e275fe03-8d63-3dfd-ad60-d3096da071b5
+19:19:21.870 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:19:21.945 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b745f93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:19:21.965 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$278e6290] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:19:22.240 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:19:22.375 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:19:22.436 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+19:19:22.635 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+19:19:22.640 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+19:19:22.850 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+19:19:23.025 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:19:23.295 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+19:19:25.025 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+19:19:25.045 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:19:25.055 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:19:25.655 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+19:19:26.355 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+19:19:26.495 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+19:19:26.495 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 7.5449703 seconds (JVM running for 8.965)
+19:19:33.400 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/v2/api-docs
+19:19:33.400 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+19:19:33.400 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+19:19:33.400 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+19:19:33.400 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+19:19:33.400 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+19:19:34.185 [reactor-http-nio-3] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+19:19:34.350 [reactor-http-nio-3] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+19:19:34.355 [reactor-http-nio-3] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+19:19:34.375 [reactor-http-nio-3] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+19:19:34.375 [reactor-http-nio-3] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[192.168.220.1:8082],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8082;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@5d7d80b
+19:19:35.365 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+19:21:53.684 [reactor-http-nio-3] - 41 - JWTAuthFilter log - /service-user/v2/api-docs
+19:21:53.684 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+19:21:53.684 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/login
+19:21:53.684 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/login/signup
+19:21:53.684 [reactor-http-nio-3] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+19:21:53.684 [reactor-http-nio-3] - 47 - JWTAuthFilter log - pass!!!
+19:51:07.024 [Thread-38] - 53 - c.n.l.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+19:51:07.029 [Thread-25] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+19:51:07.033 [Thread-25] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+19:51:07.049 [Thread-25] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+19:51:07.059 [Thread-25] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+19:51:07.071 [Thread-25] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:10:13.445 [main] - 675 - c.y.apigateway.ApiGatewayApplication - No active profile set, falling back to default profiles: default
+20:10:14.616 [main] - 126 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+20:10:14.701 [main] - 182 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51ms. Found 0 repository interfaces.
+20:10:15.500 [main] - 294 - o.s.cloud.context.scope.GenericScope - BeanFactory id=e275fe03-8d63-3dfd-ad60-d3096da071b5
+20:10:15.541 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'cc.yysy.apigateway.service.UserService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:10:15.680 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e8b762f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:10:15.706 [main] - 330 - o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4d165f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:10:16.206 [main] - 110 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:10:16.447 [main] - 123 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:10:16.584 [main] - 31 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:10:16.736 [main] - 46 - org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+20:10:16.841 [main] - 213 - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+20:10:17.084 [main] - 49 - o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+20:10:17.296 [main] - 157 - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:10:17.560 [main] - 415 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:10:19.870 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+20:10:19.875 [main] - 107 - o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+20:10:19.903 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+20:10:19.906 [main] - 122 - c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+20:10:20.516 [main] - 171 - o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService
+20:10:21.199 [main] - 77 - o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8700
+20:10:21.320 [main] - 64 - c.a.c.n.r.NacosServiceRegistry - nacos registry, DEFAULT_GROUP api-gateway 192.168.220.1:8700 register finished
+20:10:21.322 [main] - 59 - c.y.apigateway.ApiGatewayApplication - Started ApiGatewayApplication in 11.0845616 seconds (JVM running for 13.69)
+20:11:23.813 [reactor-http-nio-5] - 41 - JWTAuthFilter log - /service-user/v2/api-docs
+20:11:23.814 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/getPubKey
+20:11:23.814 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/login
+20:11:23.814 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/login/signup
+20:11:23.815 [reactor-http-nio-5] - 43 - JWTAuthFilter log - /service-user/v2/api-docs
+20:11:23.815 [reactor-http-nio-5] - 47 - JWTAuthFilter log - pass!!!
+20:11:24.744 [reactor-http-nio-5] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+20:11:24.955 [reactor-http-nio-5] - 197 - c.n.loadbalancer.BaseLoadBalancer - Client: service-user instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+20:11:24.963 [reactor-http-nio-5] - 222 - c.n.l.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+20:11:24.988 [reactor-http-nio-5] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+20:11:24.991 [reactor-http-nio-5] - 150 - c.n.l.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client service-user initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=service-user,current list of Servers=[192.168.220.1:8082],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.220.1:8082;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@2b0b96c2
+20:11:25.973 [PollingServerListUpdater-0] - 115 - c.n.config.ChainedDynamicProperty - Flipping property: service-user.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+20:28:26.597 [Thread-44] - 53 - c.n.l.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+20:28:26.708 [Thread-26] - 76 - c.a.c.n.r.NacosServiceRegistry - De-registering from Nacos Server now...
+20:28:26.762 [Thread-26] - 95 - c.a.c.n.r.NacosServiceRegistry - De-registration finished.
+20:28:26.933 [Thread-26] - 597 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+20:28:27.405 [Thread-26] - 350 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:28:27.536 [Thread-26] - 352 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

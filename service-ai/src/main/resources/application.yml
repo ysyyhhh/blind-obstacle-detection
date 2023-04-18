@@ -1,0 +1,46 @@
+server:
+  port: 8088
+swagger:
+  enabled: true
+  base-package: cc.yysy.serviceai
+  version: V1.0
+  description: ai服务
+  terms-of-service-url: http://localhost:8008/doc.html
+spring:
+  application:
+    name: service-ai
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blind_obstacle_detection?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: remote
+    password: REDACTED
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: 10MB
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: remote
+    password: REDACTED
+#注意，如果使用gpu，则需要你安装cuda，最好是11以上的版本，否则请使用cpu处理
+ai:
+  yolo:
+    deviceType: cpu
+
+logging:
+  level:
+    com:
+      fly: debug
+#logging.level.ai.djl=debug
+minio:
+  endpoint: http://127.0.0.1:9000
+  accessKey: admin
+  secretKey: minioadmin
+  bucketName: obstacle-raw
