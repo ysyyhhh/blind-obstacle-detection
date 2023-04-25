@@ -29,4 +29,11 @@ public class UserController {
         return subscribeAreaService.getUnReadMessageList(user.getId());
     }
 
+    @PostMapping("/readMessage")
+    public Result readMessage(@RequestBody Map<String,Integer> map){
+        String userStr = ThreadLocalUtils.get(SystemConstant.HEADER_KEY_OF_USER);
+        User user = (User) JSONObject.toJavaObject( JSONObject.parseObject(userStr),User.class);
+        Integer obstacleId = map.get("obstacle_id");
+        return subscribeAreaService.readMessage(obstacleId,user.getId());
+    }
 }

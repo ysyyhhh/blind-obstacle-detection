@@ -10,3 +10,6 @@
 /service-subscription/target/
 /service-user/target/
 /utils-common/target/
+/detect-yolo/
+/store/
+/client-web/

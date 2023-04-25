@@ -44,6 +44,7 @@ public class ObstacleServiceImpl implements ObstacleService {
     }
 
     public Result updateObstacle( Map<String,Object> params) {
+
         return Result.resultDB(obstacleMapper.updateObstacle(params));
     }
 

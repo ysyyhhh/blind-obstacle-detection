@@ -36,8 +36,6 @@ public class AreaServiceImpl implements AreaService {
         Area area = areaList.get(i);
         JSONObject areaJson = new JSONObject();
         areaJson.put("id",area.getId());
-//        logger.info(area.getFullName());
-//        logger.info(area.getLevel()+"");
         String name[] = area.getFullName().split("-");
         String label = name[area.getLevel()];
         for(int j = area.getLevel()+1;j < name.length;j++){

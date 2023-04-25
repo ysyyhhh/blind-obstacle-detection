@@ -13,7 +13,6 @@
         <module>service-subscription</module>
         <module>service-area</module>
         <module>api-gateway</module>
-
         <module>client-web</module>
         <module>service-obstacle</module>
         <module>service-datasource</module>

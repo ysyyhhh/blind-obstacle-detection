@@ -82,5 +82,4 @@ public interface AreaMapper {
     @Select("select a.* from area a,area b where a.full_name like b.full_name || '%' order by a.full_name;")
     List<Area> getAreaListOrderByFullName();
 
-
 }

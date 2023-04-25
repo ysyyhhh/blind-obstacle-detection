@@ -306,6 +306,12 @@ public class UserServiceImpl implements UserService {
     }
 
     public Result deleteUser(Integer userId) {
-        return Result.resultDB(userMapper.deleteUser(userId));
+        try{
+            userMapper.deleteUser(userId);
+        } catch (Exception e){
+            e.printStackTrace();
+            return Result.error("不能删除有关联数据的用户");
+        }
+        return Result.success("删除成功");
     }
 }

@@ -25,13 +25,13 @@ public class LoginController {
     static final Logger logger = Logger.getLogger("LoginController log");
     @Autowired
     UserServiceImpl userService;
+
+
     /**
      * 注册1 密钥交付
      * @param params
      * @return 公钥
      */
-
-
     @PostMapping("/getPubKey")
     public Result getPubKey(@RequestBody Map<String,Object> params){
         String loginName = (String) params.get("loginName");
@@ -42,6 +42,7 @@ public class LoginController {
         }
         return Result.success(pubKey);
     }
+
 
     /**
      * 注册2 正式注册

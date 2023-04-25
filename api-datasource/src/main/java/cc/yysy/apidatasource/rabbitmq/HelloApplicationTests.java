@@ -1,4 +1,4 @@
-package cc.yysy.servicedatasource.rabbitmq;
+package cc.yysy.apidatasource.rabbitmq;
 
 
 import org.junit.Test;

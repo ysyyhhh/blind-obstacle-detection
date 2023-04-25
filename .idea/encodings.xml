@@ -3,16 +3,24 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/api-datasource/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/client-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client-web/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/detect-yolo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/detect-yolo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-ai/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-ai/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-area/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-area/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-datasource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-datasource/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-obstacle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-obstacle/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-subscription/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-subscription/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-user/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/utils-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/utils-common/src/main/resources" charset="UTF-8" />
   </component>
 </project>

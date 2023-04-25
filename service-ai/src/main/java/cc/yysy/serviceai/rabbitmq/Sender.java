@@ -13,7 +13,6 @@ public class Sender {
     private AmqpTemplate rabbitmqTemplate;
     private static final String DEAL_FILE_NAME = "dealFile";
 
-
     public void send(String url){
         logger.info("Sender:" + url);
 //        String content = "hello" + new Date();

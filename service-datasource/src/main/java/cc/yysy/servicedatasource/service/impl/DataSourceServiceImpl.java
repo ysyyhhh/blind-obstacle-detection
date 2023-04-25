@@ -50,7 +50,7 @@ public class DataSourceServiceImpl {
             String endUrl = arr[arr.length - 1];
             String[] endArr = endUrl.split("_");
             String date = endArr[0] + " " + endArr[1].replaceAll("-", ":");
-            String[] gps = endArr[2].replace(".jpg", "").split("-");
+            String[] gps = {endArr[2] ,endArr[3].replace(".jpg", "")};
             result.put("url",url);
             result.put("date",date);
             result.put("gps",gps);
@@ -63,11 +63,11 @@ public class DataSourceServiceImpl {
 
 
     /**
-     * 定时任务，从服务启动开始每隔5分钟执行一次
+     * 定时任务，从服务启动开始每隔1分钟执行一次
      * 将每个datasource存在minio中的图片，上传到rabbitmq的rawFile队列中，并用redis的Set做已经上传的标记
      */
     @PostConstruct
-    @Scheduled(cron = "0 0/5 * * * ?")
+    @Scheduled(cron = "0 0/1 * * * ?")
     public void uploadRawImageToRabbitMQ() {
         logger.info("开始上传图片到rabbitmq");
         List<DataSource> list = dataSourceMapper.getDataSourceList();
@@ -80,12 +80,15 @@ public class DataSourceServiceImpl {
             List<String> itemList = minioUtil.listUrl(bucketName);
             if(itemList.isEmpty()) continue;
             for(String url : itemList){
-                if(redisSetUtil.isMember(ENQUEUE_FILE,url)){
+                Map<String,Object> params = new HashMap<>();
+                params.put("url",url);
+                params.put("dataSourceId",String.valueOf( dataSource.getId()) );
+                if(redisSetUtil.isMember(ENQUEUE_FILE,params.toString())){
                     //如果已经上传过了，就跳过
                     continue;
                 }
-                sender.send(url);
-                redisSetUtil.add(ENQUEUE_FILE,url,60);
+                sender.send(params);
+                redisSetUtil.add(ENQUEUE_FILE,params.toString(),1);
             }
         }
     }
