@@ -92,4 +92,12 @@ public class UserController {
     }
 
 
+    @PostMapping("/getAreaListByLevel")
+    public Result getAreaListByLevel(@RequestBody Map<String,Object> params){
+        Integer level = (Integer) params.get("level");
+        if (level == null){
+            return Result.error(ResultCode.PARAM_IS_BLANK);
+        }
+        return areaService.getAreaListByLevel(level);
+    }
 }

@@ -114,7 +114,6 @@ public class AiServiceImpl implements AiService {
         return yoloService.detect(bufferedImage);
     }
 
-
     private BufferedImage inputStreamToBufferedImage(InputStream inputStream) throws IOException {
         return ImageIO.read(inputStream);
     }
@@ -166,7 +165,8 @@ public class AiServiceImpl implements AiService {
             ImageResult imageResult = imageResultList.get(i);
             //3.遍历雷达结果
             List<RadarResult> radarResultList = dataSourceIdToRadarList.get(dataSourceId);
-//            for (RadarResult radarResult : radarResultList) {
+
+            //            for (RadarResult radarResult : radarResultList) {
 //                //4.判断时间是否在阈值范围内
 //                if(Math.abs(imageResult.getTime() - radarResult.getTime()) < 1000 * 60 * 5) {
 //                    //5.判断雷达结果是否大于阈值

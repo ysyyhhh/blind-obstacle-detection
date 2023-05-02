@@ -166,5 +166,8 @@ public class AreaServiceImpl implements AreaService {
         return Result.success(fullName);
     }
 
+    public Result getAreaListByLevel(Integer level) {
+        return Result.success(areaMapper.getAreaListByLevel(level));
+    }
 
 }

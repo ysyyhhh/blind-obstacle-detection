@@ -117,4 +117,34 @@ listQuery: {
         if(obstacleId == null) return Result.error(ResultCode.PARAM_IS_BLANK);
         return obstacleService.getResponsibilityByobstacleId(obstacleId);
     }
+
+    @PostMapping("/getObstacleStatistics")
+    public Result getObstacleStatistics(@RequestBody Map<String,Object> params){
+        String areaFullName = (String) params.get("areaFullName");
+        if(areaFullName == null) return Result.error(ResultCode.PARAM_IS_BLANK);
+        return obstacleService.getObstacleStatistics(areaFullName);
+    }
+
+    @PostMapping("/getObstacleTypeByDate")
+    public Result getObstacleTypeByDate(@RequestBody Map<String,Object> params){
+        String begDate = (String) params.get("begDate");
+        String endDate = (String) params.get("endDate");
+        String location = (String) params.get("areaFullName");
+        if(begDate == null || endDate == null || location == null) return Result.error(ResultCode.PARAM_IS_BLANK);
+        return obstacleService.getObstacleTypeByDate(location,begDate,endDate);
+    }
+
+    @PostMapping("/getObstacleCountByDate")
+    public Result getObstacleCountByDate(@RequestBody Map<String,Object> params){
+        String location = (String) params.get("areaFullName");
+        if( location == null) return Result.error(ResultCode.PARAM_IS_BLANK);
+        return obstacleService.getObstacleCountByDate(location);
+    }
+
+    @PostMapping("/getUnprocessedObstacleListByArea")
+    public Result getUnprocessedObstacleListByArea(@RequestBody Map<String,Object> params){
+        String areaFullName = (String) params.get("areaFullName");
+        if(areaFullName == null) return Result.error(ResultCode.PARAM_IS_BLANK);
+        return obstacleService.getUnprocessedObstacleListByArea(areaFullName);
+    }
 }

@@ -140,4 +140,20 @@ public class ObstacleServiceImpl implements ObstacleService {
     public Result getResponsibilityByobstacleId(Integer obstacleId) {
         return Result.success(obstacleMapper.getResponsibilityByobstacleId(obstacleId));
     }
+
+    public Result getObstacleStatistics(String location) {
+        return Result.success(obstacleMapper.getObstacleStatistics(location));
+    }
+
+    public Result getObstacleTypeByDate(String location,String begDate,String endDate){
+        return Result.success(obstacleMapper.getObstacleTypeByDate(location,begDate,endDate));
+    }
+
+    public Result getObstacleCountByDate(String location){
+        return Result.success(obstacleMapper.getObstacleCountByDate(location));
+    }
+
+    public Result getUnprocessedObstacleListByArea(String areaFullName) {
+        return Result.success(obstacleMapper.getUnprocessedObstacleListByArea(areaFullName));
+    }
 }

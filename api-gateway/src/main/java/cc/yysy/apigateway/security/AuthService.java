@@ -114,6 +114,7 @@ public class AuthService {
         urlPermissionsMap.put("/service-timetable/classList/**", "authc");
         urlPermissionsMap.put("/service-user/user/**", "authc");
         urlPermissionsMap.put("/service-obstacle/user/**", "authc");
+        urlPermissionsMap.put("/service-subscription/user/**", "authc");
         urlPermissionsMap.put("/**", "perms[admin]");
 
 //        urlPermissionsMap.put("/user-service/signup", "authc");

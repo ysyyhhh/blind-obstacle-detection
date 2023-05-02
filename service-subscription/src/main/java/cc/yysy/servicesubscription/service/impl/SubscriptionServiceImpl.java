@@ -47,6 +47,6 @@ public class SubscriptionServiceImpl implements SubscriptionService {
     }
 
     public Result readMessage(Integer obstacleId, Integer userId) {
-return Result.success(subscriptionMapper.readMessage(obstacleId,userId));
+        return Result.success(subscriptionMapper.readMessage(obstacleId,userId));
     }
 }

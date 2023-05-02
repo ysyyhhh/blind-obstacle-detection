@@ -147,6 +147,8 @@ public interface ObstacleMapper {
     @Select("select * from obstacle_list where location like concat('%',#{area},'%')")
     List<ObstacleList> getObstacleListByArea(@Param("area") String areaFullName);
 
+    @Select("select * from obstacle_list where location like concat('%',#{area},'%') and processing_status = 0")
+    List<ObstacleList> getUnprocessedObstacleListByArea(String areaFullName);
 
     @Select("select phone_number as phoneNumber,real_name as realName from user where user.id in (" +
             "select user_id from user_obstacle_responsibility where obstacle_id = #{obstacleId} )")
@@ -162,6 +164,75 @@ public interface ObstacleMapper {
     int deleteResponsibility(@Param("record")UserObstacleResponsibility userObstacleResponsibility);
 
 
+    /**
+     *
+     * 根据下面的存储过程，获取统计数据
+     *         数量    同比    环比
+     * 今日发现
+     * 本周发现
+     * 本月发现
+     * 今年发现
+     *
+     */
+    @Select("select num,\n" +
+            "       (num - today_count_tb) / today_count_tb * 100 as tb,\n" +
+            "       (num - today_count_hb) / today_count_hb * 100 as hb from\n" +
+            "(select count(*) as num from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y-%m-%d') = date_format(now(), '%Y-%m-%d')) t1,\n" +
+            "(select count(*) as today_count_tb from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y-%m-%d') = date_format(date_sub(now(), interval 1 year), '%Y-%m-%d')) t2,\n" +
+            "(select count(*) as today_count_hb from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y-%m-%d') = date_format(date_sub(now(), interval 1 day), '%Y-%m-%d')) t3\n" +
+            "union\n" +
+            "# 本周发现数量，同比，环比\n" +
+            "select num,\n" +
+            "       (num - week_count_tb) / week_count_tb * 100 as tb,\n" +
+            "       (num - week_count_hb) / week_count_hb * 100 as hb from\n" +
+            "(select count(*) as num from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y-%m-%d') >= date_format(date_sub(now(), interval 7 day), '%Y-%m-%d')) t1,\n" +
+            "(select count(*) as week_count_tb from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y-%m-%d') >= date_format(date_sub(now(), interval 1 year), '%Y-%m-%d')) t2,\n" +
+            "(select count(*) as week_count_hb from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y-%m-%d') >= date_format(date_sub(now(), interval 7 day), '%Y-%m-%d')) t3\n" +
+            "union\n" +
+            "# 本月发现数量，同比，环比\n" +
+            "select num,\n" +
+            "       (num - month_count_tb) / month_count_tb * 100 as tb,\n" +
+            "       (num - month_count_hb) / month_count_hb * 100 as hb from\n" +
+            "(select count(*) as num from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y-%m') = date_format(now(), '%Y-%m')) t1,\n" +
+            "(select count(*) as month_count_tb from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y-%m') = date_format(date_sub(now(), interval 1 year), '%Y-%m')) t2,\n" +
+            "(select count(*) as month_count_hb from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y-%m') = date_format(date_sub(now(), interval 1 month), '%Y-%m')) t3\n" +
+            "union\n" +
+            "select num,\n" +
+            "       (num - year_count_tb) / year_count_tb * 100 as tb,\n" +
+            "       (num - year_count_hb) / year_count_hb * 100 as hb from\n" +
+            "(select count(*) as num from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y') = date_format(now(), '%Y')) t1,\n" +
+            "(select count(*) as year_count_tb from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y') = date_format(date_sub(now(), interval 1 year), '%Y')) t2,\n" +
+            "(select count(*) as year_count_hb from obstacle where location like CONCAT('%',#{location},'%') and date_format(discovery_time, '%Y') = date_format(date_sub(now(), interval 1 year), '%Y')) t3;")
+    List<Map<String,Object>> getObstacleStatistics(@Param("location")String location);
+//    @Select(value = "CALL getObstacleStatistics()", resultType = Void)
 //    @Select(value = "CALL getOptions()", resultType = Void.class)
 //    void executeGetOptions(ResultHandler handler);
+
+    @Select("<script> select type, count(*) as count from obstacle " +
+            "<where> " +
+            "<if test='begDate != null and endDate != null'> and discovery_time between #{begDate} and #{endDate} </if>" +
+            "<if test='location != null'> and location like CONCAT('%',#{location},'%') </if>" +
+            "</where>" +
+            "group by type" +
+            "</script>")
+    List<Map<String,Object>> getObstacleTypeByDate(@Param("location")String location,@Param("begDate")String begDate,@Param("endDate")String endDate);
+
+
+    @Select("(select date_format(discovery_time, '%Y-%m-%d') as date, count(*) as count, 'discovery' as status\n" +
+            "from obstacle\n" +
+            "where discovery_time > date_sub(now(), interval 1 week)\n" +
+            "and location like CONCAT('%',#{location},'%')\n" +
+            "group by date\n" +
+            "order by date)\n" +
+            "union\n" +
+            "# 查看一周内每天处理障碍物数量\n" +
+            "select date_format(processing_time, '%Y-%m-%d') as date, count(*) as count,'processing' as status\n" +
+            "from obstacle\n" +
+            "where processing_time > date_sub(now(), interval 1 week)\n" +
+            "and location like CONCAT('%',#{location},'%')\n" +
+            "group by date\n" +
+            "order by date;")
+    List<Map<String,Object>> getObstacleCountByDate(@Param("location")String location);
+
+
 }
