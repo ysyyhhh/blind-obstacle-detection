@@ -27,7 +27,7 @@ spring:
   configuration:
     map-underscore-to-camel-case: true
   jackson:
-    date-format: yyyy-MM-dd
+    date-format: yyyy-MM-dd HH:mm:ss
     time-zone: Asia/Shanghai
 mybatis-plus:
   configuration:

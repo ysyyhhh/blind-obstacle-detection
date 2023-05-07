@@ -68,9 +68,11 @@ public interface ObstacleMapper {
             "</script>")
     Integer getObstacleListCount(@Param("listQuery") ListQuery listQuery);
 
-    @Insert("insert into obstacle (location,description,processing_status,processing_time,processor_id) " +
-            "values (#{record.location},#{record.description},#{record.processingStatus},#{record.processingTime},#{record.processorId})"   )
-    int addObstacle(@Param("record") Obstacle newObstacle);
+    //TODO 只保留必要的
+
+    @Insert("insert into obstacle (location,type,discovery_time,processing_status,processing_time,processor_id,image_path) " +
+            "values (#{record.location},#{record.type},#{record.discoveryTime},#{record.processingStatus},#{record.processingTime},#{record.processorId},#{record.imagePath})")
+    int addObstacle(@Param("record") Map<String,Object> newObstacle);
 
     @Delete("delete from obstacle where id = #{obstacleId}")
     int deleteObstacle(@Param("obstacleId")Integer obstacleId);

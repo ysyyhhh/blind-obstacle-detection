@@ -10,6 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 //@SpringApplicationConfiguration(classes = ServiceDataSourceApplication.class)
+
 public class HelloApplicationTests {
 
     @Autowired

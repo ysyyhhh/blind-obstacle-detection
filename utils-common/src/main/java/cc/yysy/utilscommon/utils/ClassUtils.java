@@ -21,7 +21,7 @@ public class ClassUtils {
             System.out.println(fieldName);
             if(value != null){
                 try {
-                    if(fieldName.compareTo("date") == 0){
+                    if(fieldName.compareTo("date") == 0 || fieldName.compareTo("discoveryTime") == 0){
                         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
                         Date date;
                         if(((String) value).compareTo("") == 0){

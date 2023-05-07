@@ -16,14 +16,15 @@ public class YoloProperties {
 
     private String deviceType = "cpu";
 
-    private String yoloUrl = "/model/yolo/yolov5.zip";
+    private String yoloUrl = "/model/yolo/yolov5-od.zip";
 
     /**
      * 默认使用中等模型
      */
-    private String modelName = "yolov5m.onnx";
-
-    private String nameList = "coco.names";
+//    private String modelName = "yolov5m.onnx";
+    private String modelName = "yolov5s.onnx";
+//    private String nameList = "coco.names";
+    private String nameList = "od.names";
 
     private Float threshold = 0.5f;
 

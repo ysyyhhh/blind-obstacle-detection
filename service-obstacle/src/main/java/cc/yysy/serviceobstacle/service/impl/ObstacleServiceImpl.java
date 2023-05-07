@@ -35,7 +35,7 @@ public class ObstacleServiceImpl implements ObstacleService {
         return Result.success( obstacleMapper.getObstaclesByFullName(fullName));
     }
 
-    public Result addObstacle(Obstacle newObstacle) {
+    public Result addObstacle(Map<String,Object> newObstacle) {
         return Result.resultDB(obstacleMapper.addObstacle(newObstacle));
     }
 

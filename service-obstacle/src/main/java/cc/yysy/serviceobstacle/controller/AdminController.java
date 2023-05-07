@@ -26,9 +26,7 @@ public class AdminController {
 
     @PostMapping("/addObstacle")
     public Result addObstacle(@RequestBody Map<String,Object> params){
-        Obstacle newObstacle = new Obstacle();
-        ClassUtils.MapToObject(newObstacle,params);
-        return obstacleService.addObstacle(newObstacle);
+        return obstacleService.addObstacle(params);
     }
 
     @PostMapping("/deleteObstacle")

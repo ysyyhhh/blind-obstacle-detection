@@ -27,6 +27,42 @@ public class DetectObjectDto {
     private Double width;
     private Double height;
     private Map<String, Object> data;
+    private Integer count = 1;
+
+
+    public Double getX() {
+        return x;
+    }
+
+    public void setX(Double x) {
+        this.x = x;
+    }
+
+    public Double getY() {
+        return y;
+    }
+
+    public void setY(Double y) {
+        this.y = y;
+    }
+
+    public Double getWidth() {
+        return width;
+    }
+
+    public void setWidth(Double width) {
+        this.width = width;
+    }
+
+    public Double getHeight() {
+        return height;
+    }
+
+    public void setHeight(Double height) {
+        this.height = height;
+    }
+
+
 
     public DetectObjectDto(Classifications.Classification item) {
         if (!(item instanceof DetectedObjects.DetectedObject)) {

@@ -2,6 +2,7 @@ package cc.yysy.serviceai.controller;
 
 import ai.djl.modality.cv.output.DetectedObjects;
 import cc.yysy.serviceai.common.DetectObjectDto;
+import cc.yysy.serviceai.service.impl.AiServiceImpl;
 import cc.yysy.serviceai.yolo.YoloService;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,7 @@ import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -32,26 +34,27 @@ public class YoloController {
     @Resource
     YoloService yoloService;
 
+    @Resource
+    AiServiceImpl aiService;
     @PostMapping("/image")
 //    @ApiOperation("图片对象检测，返回结果图片")
-    public void ocr(@RequestPart MultipartFile file, HttpServletResponse response) throws IOException {
-
+    public void image(@RequestPart MultipartFile file, HttpServletResponse response) throws IOException {
         BufferedImage image = ImageIO.read(file.getInputStream());
         BufferedImage result = yoloService.getResultImage(image);
 
         response.setContentType("image/png");
-        ServletOutputStream os = response.getOutputStream();
-        ImageIO.write(result, "PNG", os);
-        os.flush();
+//        ServletOutputStream os = response.getOutputStream();
+        ImageIO.write(result, "PNG", new File("D:\\out.jpg"));
+//        os.flush();
     }
 
     @PostMapping("/upload")
 //    @ApiOperation("图片对象检测，返回结果对象")
-    public List<DetectObjectDto> ocr(@RequestPart MultipartFile file) throws IOException {
+    public List<DetectObjectDto> upload(@RequestPart MultipartFile file) throws IOException {
         BufferedImage image = ImageIO.read(file.getInputStream());
 //        DetectedObjects result = yoloService.detect(image);
 
-        return yoloService.detect(image);
+        return aiService.detect(image);
     }
 
 

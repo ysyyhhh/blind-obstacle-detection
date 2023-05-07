@@ -8,6 +8,26 @@ public class ImageResult {
     Double longitude;
     Double latitude;
     List<DetectObjectDto> dtoList;
+    String fileName;
+
+    @Override
+    public String toString() {
+        return "ImageResult{" +
+                "time=" + time +
+                ", longitude=" + longitude +
+                ", latitude=" + latitude +
+                ", dtoList=" + dtoList +
+                ", fileName='" + fileName + '\'' +
+                '}';
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
 
     public Long getTime() {
         return time;

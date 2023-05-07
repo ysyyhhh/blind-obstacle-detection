@@ -239,9 +239,9 @@ public class MinioUtil {
      * 查看文件对象
      * @return 存储bucket内文件对象信息
      */
-    public List<Item> listObjects() {
+    public List<Item> listObjects(String bucketName) {
         Iterable<Result<Item>> results = minioClient.listObjects(
-                ListObjectsArgs.builder().bucket(prop.getBucketName()).build());
+                ListObjectsArgs.builder().bucket(bucketName).build());
         List<Item> items = new ArrayList<>();
         try {
             for (Result<Item> result : results) {

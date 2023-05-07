@@ -105,17 +105,30 @@ public class ImageUtils {
      * @param detections    检测结果
      */
     public static BufferedImage drawDetections(BufferedImage image, DetectedObjects detections) {
-
         Graphics2D g = (Graphics2D) image.getGraphics();
         int stroke = 2;
         g.setStroke(new BasicStroke(stroke));
         g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         int imageWidth = image.getWidth();
         int imageHeight = image.getHeight();
+        DetectedObjects.DetectedObject human = null;
 
+        double humanx = 10;
         List<DetectedObjects.DetectedObject> list = detections.items();
         for (DetectedObjects.DetectedObject result : list) {
             String className = result.getClassName();
+//            if(className.equals("人类")){
+//                System.out.println(result.getProbability());
+//                System.out.println(result.getBoundingBox().getPoint().getX());
+//                if(result.getBoundingBox().getPoint().getX() < humanx){
+//                    humanx = result.getBoundingBox().getPoint().getX();
+//                    human = result;
+//                }
+//                continue;
+//            }
+            if(className.equals("handbag")){
+                continue;
+            }
             BoundingBox box = result.getBoundingBox();
             double probability = result.getProbability();
             Color color = colorMap.get(Math.abs(className.hashCode() % 6));
@@ -130,11 +143,51 @@ public class ImageUtils {
 
             drawText(g, className, probability, x, y, width);
         }
+        if(human != null){
+            String className = human.getClassName();
+            BoundingBox box = human.getBoundingBox();
+            double probability = human.getProbability();
+            Color color = colorMap.get(Math.abs(className.hashCode() % 6));
+            g.setPaint(color);
+            Rectangle rectangle = box.getBounds();
+            int x = (int) (rectangle.getX() * imageWidth);
+            int y = (int) (rectangle.getY() * imageHeight);
+            int width = (int) (rectangle.getWidth() * imageWidth);
+            int height = (int) (rectangle.getHeight() * imageHeight);
+            g.drawRect(x, y, width, height);
+            drawText(g, className, probability, x, y, width);
+        }
+
         g.dispose();
 
         return image;
     }
 
+    public static BufferedImage drawDetectObjectDto(BufferedImage image, List<DetectObjectDto> result) {
+        //仿照drawDetections方法，绘制检测结果
+        Graphics2D g = (Graphics2D) image.getGraphics();
+        int stroke = 2;
+        g.setStroke(new BasicStroke(stroke));
+        g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        int imageWidth = image.getWidth();
+        int imageHeight = image.getHeight();
+        for (DetectObjectDto detectObjectDto : result) {
+            String className = detectObjectDto.getClassName();
+//            BoundingBox box = detectObjectDto.getBoundingBox();
+            double probability = detectObjectDto.getProbability();
+            Color color = colorMap.get(Math.abs(className.hashCode() % 6));
+            g.setPaint(color);
+//            Rectangle rectangle = box.getBounds();
+            int x = (int) (detectObjectDto.getX() * imageWidth);
+            int y = (int) (detectObjectDto.getY() * imageHeight);
+            int width = (int) (detectObjectDto.getWidth() * imageWidth);
+            int height = (int) (detectObjectDto.getHeight() * imageHeight);
+            g.drawRect(x, y, width, height);
+            drawText(g, className, probability, x, y, width);
+        }
+        g.dispose();
+        return image;
+    }
     private static void drawText(Graphics2D g, String className, double probability, int x, int y, int width) {
         //设置水印的坐标
         String showText = String.format("%s %.0f%%", className, probability * 100);
@@ -197,5 +250,6 @@ public class ImageUtils {
         double newHeight = newY + height > 1 ? 1 - newY : height;
         return new Rectangle(newX, newY, newWidth, newHeight);
     }
+
 
 }
