@@ -13,7 +13,7 @@
                 driverClass="com.mysql.jdbc.Driver"
                 connectionURL="jdbc:mysql://localhost:3306/blind_obstacle_detection?characterEncoding=utf-8&amp;useSSL=false"
 
-                userId="remote" password="REDACTED"/>
+                userId="remote" password="test"/>
         <javaModelGenerator targetPackage="cc.yysy.utilscommon.entity" targetProject="src/main/java"></javaModelGenerator>
 
         <sqlMapGenerator targetPackage="mapper"  targetProject="src/main/resources"></sqlMapGenerator>
